@@ -1,13 +1,12 @@
-%h1.x#y Welcome to the Eat What? HomePage
+%h1.x#y Welcome to Eat What? 
 
-%h1= "Welcome #{ @current_user.name }"
+/ %h1= "Welcome #{ @current_user.name }"
 
-%input.form-input{:placeholder => 'Your message here', :autofocus => true}
+%input.form-input{:placeholder => 'test placeholder 1', :autofocus => true}
 
-<input class="form-input" placeholder="Your message here">
+<input class="form-input" placeholder="placeholder 2">
 
 %div#content
   %div.left.column
-    %h2 Welcome to Eat What?
     %p Print information
   %div.right.column Partial here
