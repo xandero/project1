@@ -5,7 +5,7 @@
 #  id           :integer          not null, primary key
 #  name         :string
 #  serving_size :string
-#  quantity     :integer
+#  quantity     :float
 #  created_at   :datetime
 #  updated_at   :datetime
 #

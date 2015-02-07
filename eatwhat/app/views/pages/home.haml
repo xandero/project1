@@ -1,0 +1,13 @@
+%h1.x#y Welcome to the Eat What? HomePage
+
+%h1= "Welcome #{ @current_user.name }"
+
+%input.form-input{:placeholder => 'Your message here', :autofocus => true}
+
+<input class="form-input" placeholder="Your message here">
+
+%div#content
+  %div.left.column
+    %h2 Welcome to Eat What?
+    %p Print information
+  %div.right.column Partial here
