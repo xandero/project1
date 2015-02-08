@@ -1,0 +1,7 @@
+%h1 Historical Meals List
+
+%ul
+  - @meals.each do |meal|
+    %li= meal.date
+
+/ stretch > collate by date and meal type

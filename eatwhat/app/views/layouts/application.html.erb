@@ -15,6 +15,7 @@
   </nav>
 
 <div class="container">
+<h1>Welcome <%= @current_user.try(:name) %></h1>
   <%= yield %>
 </div>
 

@@ -21,7 +21,7 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :password, :password_confirmation)
   end
 
-  def check_if_admin
-    redirect_to(root_path) unless @current_user.present? && @current_user.is_admin?
-  end
+  # def check_if_admin
+  #   redirect_to(root_path) unless @current_user.present? && @current_user.is_admin?
+  # end
 end
