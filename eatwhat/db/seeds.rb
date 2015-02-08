@@ -18,21 +18,21 @@ n2 = Nutrition.create(:name => 'government', :daily_carb => '250', :daily_fat =>
 n3 = Nutrition.create(:name => 'cyclist', :daily_carb => '350', :daily_fat => '35', :daily_protein => '90')
 n4 = Nutrition.create(:name => 'ketone', :daily_carb => '100', :daily_fat => '60', :daily_protein => '120')
 
-m1 = Meal.create(:type => 'lunch', :protein_guess => '30', :carb_guess => '20', :fat_guess => '10')
-m2 = Meal.create(:type => 'lunch', :protein_guess => '25', :carb_guess => '33', :fat_guess => '13')
-m3 = Meal.create(:type => 'dinner', :protein_guess => '40', :carb_guess => '25', :fat_guess => '9')
-m4 = Meal.create(:type => 'breakfast', :protein_guess => '31', :carb_guess => '24', :fat_guess => '10')
+# m1 = Meal.create(:type => 'lunch', :protein_guess => '30', :carb_guess => '20', :fat_guess => '10')
+# m2 = Meal.create(:type => 'lunch', :protein_guess => '25', :carb_guess => '33', :fat_guess => '13')
+# m3 = Meal.create(:type => 'dinner', :protein_guess => '40', :carb_guess => '25', :fat_guess => '9')
+# m4 = Meal.create(:type => 'breakfast', :protein_guess => '31', :carb_guess => '24', :fat_guess => '10')
 
 # Associate nutrition with user
-n1.user << u1 << u2
-n4.user << u3 << u4
-# Associate meal with user
-m1.user << u1
-m2.user << u2
-m3.user << u3
-m4.user << u4
-# Associate foods with meal
-m1.foods << f4
-m2.foods << f3
-m3.foods << f2
-m4.foods << f1
+# n1.user << u1 << u2
+# n4.user << u3 << u4
+# # Associate meal with user
+# m1.user << u1
+# m2.user << u2
+# m3.user << u3
+# m4.user << u4
+# # Associate foods with meal
+# m1.foods << f4
+# m2.foods << f3
+# m3.foods << f2
+# m4.foods << f1
