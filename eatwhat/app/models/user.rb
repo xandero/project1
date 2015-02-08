@@ -17,5 +17,5 @@
 class User < ActiveRecord::Base
   has_secure_password
   belongs_to :nutrition
-  has_and_belongs_to_many :meals
+  has_many :meals
 end
