@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   resources :nutritions, :only => [:index, :show]
   resources :meals
   resources :foods
-  
 
   get '/login' => 'session#new'
   post '/login' => 'session#create'

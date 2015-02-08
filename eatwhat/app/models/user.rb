@@ -9,9 +9,10 @@
 #  activity_level  :string
 #  weight          :integer
 #  height          :integer
+#  nutrition_id    :integer
+#  password_digest :string
 #  created_at      :datetime
 #  updated_at      :datetime
-#  password_digest :string
 #
 
 class User < ActiveRecord::Base

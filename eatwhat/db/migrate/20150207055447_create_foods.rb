@@ -3,7 +3,8 @@ class CreateFoods < ActiveRecord::Migration
     create_table :foods do |t|
       t.string :name
       t.string :serving_size
-      t.integer :quantity
+      t.float :quantity
+      t.integer :meal_id
       t.timestamps
     end
   end

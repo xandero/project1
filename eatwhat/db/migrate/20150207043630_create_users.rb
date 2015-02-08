@@ -7,6 +7,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :activity_level
       t.integer :weight
       t.integer :height
+      t.integer :nutrition_id
+      t.string :password_digest
       t.timestamps
     end
   end

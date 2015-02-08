@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150208080153) do
+ActiveRecord::Schema.define(version: 20150207070318) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20150208080153) do
     t.string   "name"
     t.string   "serving_size"
     t.float    "quantity"
+    t.integer  "meal_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -30,21 +31,12 @@ ActiveRecord::Schema.define(version: 20150208080153) do
   end
 
   create_table "meals", force: :cascade do |t|
-    t.string   "type"
+    t.string   "meal_type"
     t.date     "meal_date"
     t.integer  "protein_guess"
     t.integer  "carb_guess"
     t.integer  "fat_guess"
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.integer  "user_id"
-  end
-
-  create_table "nutrition_plans", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "daily_carb"
-    t.integer  "daily_fat"
-    t.integer  "daily_protein"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -65,9 +57,10 @@ ActiveRecord::Schema.define(version: 20150208080153) do
     t.string   "activity_level"
     t.integer  "weight"
     t.integer  "height"
+    t.integer  "nutrition_id"
+    t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "password_digest"
   end
 
 end
