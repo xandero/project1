@@ -1,2 +1,12 @@
-<h1>Meals#show</h1>
-<p>Find me in app/views/meals/show.html.erb</p>
+<h1><%= @meal.date %></h1>
+<h3>Meal Details: </h3> 
+<ul>
+  <li>Type: <%= @meal.type %></li>
+  <li>Date: <%= @meal.date %></li>
+  <li>Need to sum individual macros for the various foods within the meal and then display here.</li>
+</ul>
+
+<p>
+  <%= link_to 'Delete meal', @meal, :method => 'delete', :data => { :confirm => "Are you sure you want to delete this meal?" } %>
+</p>
+
