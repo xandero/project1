@@ -1,10 +1,10 @@
 <h3>Search results</h3>
 
-
-
+<% @food_data.each do |item| %>
 <p>
-<%= @item_name %><br>
-Brand: <%= @brand_name %><br>
-Serving unit: <%= @serving_size_unit %><br>
-Serving quantity: <%= @serving_size_qty %><br>
+<%= item['fields']['item_name'] %><br>
+Brand: <%= item['fields']['brand_name'] %><br>
+Serving unit: <%= item['fields']['nf_serving_size_unit'] %><br>
+Serving quantity: <%= item['fields']['nf_serving_size_qty'] %><br>
 </p>
+<% end %>
