@@ -1,12 +1,7 @@
-<%= form_for [@meal, @food] do |f| %>
+<%= form_tag [@meal, @food] do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
 
-  <%= f.label :serving_size %>
-  <%= f.text_field :serving_size %>
-
-  <%= f.label :quantity %>
-  <%= f.text_field :quantity %>
-
   <%= f.submit %>
 <% end %>
+
