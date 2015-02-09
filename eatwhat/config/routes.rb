@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users
   resources :nutritions, :only => [:index, :show]
   
+  
   resources :meals do
     resources :foods
   end  

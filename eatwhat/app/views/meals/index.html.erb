@@ -1,8 +1,10 @@
 <h1>Meals</h1>
 
   <% @meals.each do |meal| %>
-    <%= meal.meal_date.strftime('%A %B %e, %Y') %>
-    <%= meal.meal_type %>
+    <p>
+      <%= meal.meal_date.strftime('%A %B %e, %Y') %>
+      <%= meal.meal_type %>
+    </p>
   <% end %>  
 
 
