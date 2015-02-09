@@ -2,7 +2,7 @@
 <h3>Meal Details: </h3> 
 <ul>
   <li>Type: <%= @meal.meal_type %></li>
-  <li>Date: <%= @meal.meal_date %></li>
+  <li>Date: <%= @meal.meal_date.strftime('%e %B, %Y') %></li>
   <li>Need to sum individual macros for the various foods within the meal and then display here.</li>
 </ul>
 

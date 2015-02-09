@@ -1,10 +1,10 @@
-<h1>Meals</h1>
+<h1>Your Meals</h1>
 
-  <% @meals.each do |meal| %>
-    <p>
-      <%= meal.meal_date.strftime('%A %B %e, %Y') %>
-      <%= meal.meal_type %>
-    </p>
-  <% end %>  
+<% @meals.each do |meal| %>
+  <p>
+    <%= meal.meal_date.strftime('%e %B, %Y') %>
+    <%= meal.meal_type %>
+  </p>
+<% end %>  
 
 
