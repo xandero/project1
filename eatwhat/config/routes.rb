@@ -4,12 +4,10 @@ Rails.application.routes.draw do
   resources :nutritions, :only => [:index, :show]
 
   resources :meals do
-    resources :foods do
-      get :search, on: :member
-    end
+    resources :foods 
+    post '/search' => 'foods#search'
   end
- 
-  
+
   get '/login' => 'session#new'
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'

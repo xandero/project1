@@ -9,6 +9,7 @@ class FoodsController < ApplicationController
   raw_data = HTTParty.get url
   parsed_data = JSON.parse(raw_data.body)
   @food_data = parsed_data['hits']
+  @meal = params[:meal_id]
 
     # meal = Meal.find params[:meal_id]
     # food = meal.foods.create(food_params)
@@ -27,7 +28,7 @@ class FoodsController < ApplicationController
   def search
 
  
-
+raise params.inspect
 
     # @movie_data = JSON.parse raw_data
     # @title = @movie_data['Title']

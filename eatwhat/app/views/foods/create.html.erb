@@ -1,10 +1,11 @@
 <h3>Search results</h3>
 
-<% @food_data.each do |item| %>
-<p>
-<%= item['fields']['item_name'] %><br>
-Brand: <%= item['fields']['brand_name'] %><br>
-Serving unit: <%= item['fields']['nf_serving_size_unit'] %><br>
-Serving quantity: <%= item['fields']['nf_serving_size_qty'] %><br>
-</p>
+<%= form_tag(meal_search_path(@meal)) do %> 
+  <% @food_data.each do |item| %>
+    <p>
+    <input type="radio" name="selected_food" value="<%= item['fields']['item_id'] %>"><%= item['fields']['brand_name'] %>,
+    <%= item['fields']['item_name'] %>
+    </p>
+  <% end %> 
+  <button>Add Quantity</button> 
 <% end %>
