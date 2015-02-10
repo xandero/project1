@@ -9,8 +9,7 @@ name		:string\
 daily_carb 	:integer\
 daily_fat		:integer	\
 daily_protein	:integer\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
-\cf0 \
+\
 USER\
 name		:string\
 dob:			:date\
@@ -21,18 +20,15 @@ height		:integer\
 meal_id\
 nutrition_plan_id\
 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
-\cf0 MEAL\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
-\cf0 type			:string\
+MEAL\
+meal_type		:string\
 meal_date		:date\
 protein_guess	:integer\
 carb_guess	:integer\
 fat_guess		:integer\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
-\cf0 user_id\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
-\cf0 \
+user_id\
+food_id\
+\
 FOOD\
 name		:string\
 serving_size	:string\
@@ -40,7 +36,16 @@ quantity		:integer\
 meal_id				\
 \
 \
-nutrition plan has and belongs to many users\
+FOODS - MEALS (join table)\
+food_id\
+meal_id\
+\
+MEALS - USERS (join table) \
+meal_id\
+user_id\
+\
+\
+nutrition has many users\
 user has_nutrition\
 user has_secure_password\
 user has and belongs to many meals\
