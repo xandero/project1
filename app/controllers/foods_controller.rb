@@ -39,6 +39,7 @@ class FoodsController < ApplicationController
     url = "https://api.nutritionix.com/v1_1/item?id=#{ params[:selected_food] }&appId=92a57023&appKey=5a11032e7168104fdfa242bd3b62e636"
     raw_data = HTTParty.get url
     parsed_data = JSON.parse(raw_data.body)
+    @meal = params[:meal_id]
 
     q = params[:quantity].to_f
     carb_amount = params[:carb_amount].to_f * q
