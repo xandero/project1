@@ -9,10 +9,7 @@ class FoodsController < ApplicationController
   raw_data = HTTParty.get url
   parsed_data = JSON.parse(raw_data.body)
   @food_data = parsed_data['hits']
-<<<<<<< HEAD:app/controllers/foods_controller.rb
-=======
   @meal = params[:meal_id]
->>>>>>> API_fiddling:eatwhat/app/controllers/foods_controller.rb
 
     # meal = Meal.find params[:meal_id]
     # food = meal.foods.create(food_params)
@@ -30,8 +27,6 @@ class FoodsController < ApplicationController
 
   def search
 
- 
-raise params.inspect
 
     # @movie_data = JSON.parse raw_data
     # @title = @movie_data['Title']
