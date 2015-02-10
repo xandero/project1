@@ -5,7 +5,8 @@ Rails.application.routes.draw do
 
   resources :meals do
     resources :foods 
-    post '/search' => 'foods#search'
+    post '/quantity' => 'foods#quantity'
+    post '/food_to_meal' => 'foods#food_to_meal'
   end
 
   get '/login' => 'session#new'

@@ -1,6 +1,6 @@
 <h3>Search results</h3>
 
-<%= form_tag(meal_search_path(@meal)) do %> 
+<%= form_tag(meal_quantity_path(@meal)) do %> 
   <% @food_data.each do |item| %>
     <p>
     <input type="radio" name="selected_food" value="<%= item['fields']['item_id'] %>"><%= item['fields']['brand_name'] %>,

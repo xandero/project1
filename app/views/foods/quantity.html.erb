@@ -1,0 +1,11 @@
+<h2>Add food to meal</h2>
+
+You are adding <%= @food_data['brand_name'] %>, <%= @food_data['item_name'] %>, to your meal.<br>
+Standard serving: <%= @food_data['nf_serving_size_qty'] %> <%= @food_data['nf_serving_size_unit'] %>
+<p> 
+  <% form_tag(meal_food_to_meal_path(@meal)) %>
+  How many servings did you have? 
+  <%= number_field(:quantity, :post) %>
+  <button>Add to meal</button>
+</p>
+  
