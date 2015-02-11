@@ -43819,3 +43819,343 @@ Processing by MealsController#index as
   [1m[35mMeal Load (0.4ms)[0m  SELECT "meals".* FROM "meals" WHERE "meals"."user_id" = $1  [["user_id", 47]]
   Rendered meals/index.html.erb within layouts/application (13.2ms)
 Completed 200 OK in 135ms (Views: 123.9ms | ActiveRecord: 2.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mFood Load (0.7ms)[0m  SELECT "foods".* FROM "foods"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "foods" WHERE "foods"."id" = $1  [["id", 60]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 59]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "foods" WHERE "foods"."id" = $1  [["id", 58]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 57]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "foods" WHERE "foods"."id" = $1  [["id", 61]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 62]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "foods" WHERE "foods"."id" = $1  [["id", 63]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 64]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "foods" WHERE "foods"."id" = $1  [["id", 65]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 66]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "foods" WHERE "foods"."id" = $1  [["id", 67]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 68]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "foods" WHERE "foods"."id" = $1  [["id", 69]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 70]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "foods" WHERE "foods"."id" = $1  [["id", 71]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 45]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 46]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 48]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 47]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mMeal Load (0.7ms)[0m  [1mSELECT "meals".* FROM "meals"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 60]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 61]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 62]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 63]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 65]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 66]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 68]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 69]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 70]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 72]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 73]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 74]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 75]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 76]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 77]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 78]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 79]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 80]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 81]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 82]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 83]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 84]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 85]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 86]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 87]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 88]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 89]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 90]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mNutrition Load (0.6ms)[0m  SELECT "nutritions".* FROM "nutritions"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "nutritions" WHERE "nutritions"."id" = $1  [["id", 57]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "nutritions" WHERE "nutritions"."id" = $1[0m  [["id", 58]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "nutritions" WHERE "nutritions"."id" = $1  [["id", 59]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "nutritions" WHERE "nutritions"."id" = $1[0m  [["id", 60]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("name", "gender", "activity_level", "weight", "height", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["name", "Luke"], ["gender", "male"], ["activity_level", "very high"], ["weight", 74], ["height", 173], ["password_digest", "$2a$10$opZF8vrmdDLeeTlv1ZyyaOYVwXaZ35R4FdqFd8XKT3ocp/xJ9saOO"], ["created_at", "2015-02-11 04:10:49.067600"], ["updated_at", "2015-02-11 04:10:49.067600"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "gender", "activity_level", "weight", "height", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Adam"], ["gender", "male"], ["activity_level", "high"], ["weight", 86], ["height", 181], ["password_digest", "$2a$10$MHkYSYtGTsRAZVO50KbnnO9PRZUZFE6Vxkeg4Qe0PLqOvgiZTfUxW"], ["created_at", "2015-02-11 04:10:49.148473"], ["updated_at", "2015-02-11 04:10:49.148473"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "gender", "activity_level", "weight", "height", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["name", "Chad"], ["gender", "male"], ["activity_level", "very high"], ["weight", 99], ["height", 184], ["password_digest", "$2a$10$hLlSLEbPO0ovyBO.9LrJE.2jdpfUcC9eFPMI6WtoaA0R/.rVkFvA6"], ["created_at", "2015-02-11 04:10:49.226954"], ["updated_at", "2015-02-11 04:10:49.226954"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "gender", "activity_level", "weight", "height", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Kate"], ["gender", "male"], ["activity_level", "moderate"], ["weight", 55], ["height", 163], ["password_digest", "$2a$10$b4P1v7pvPbZQqKxJq4OPNOdhfQ0jR6kWspYL1GrOEWaqfMuhp6iSS"], ["created_at", "2015-02-11 04:10:49.310375"], ["updated_at", "2015-02-11 04:10:49.310375"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "foods" ("name", "serving_size", "quantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "chicken"], ["serving_size", "cup"], ["quantity", 1.5], ["created_at", "2015-02-11 04:10:49.322694"], ["updated_at", "2015-02-11 04:10:49.322694"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "foods" ("name", "serving_size", "quantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "beef"], ["serving_size", "cup"], ["quantity", 2.0], ["created_at", "2015-02-11 04:10:49.328847"], ["updated_at", "2015-02-11 04:10:49.328847"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "foods" ("name", "serving_size", "quantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "sweet potato"], ["serving_size", "cup"], ["quantity", 0.5], ["created_at", "2015-02-11 04:10:49.336014"], ["updated_at", "2015-02-11 04:10:49.336014"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foods" ("name", "serving_size", "quantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "apple"], ["serving_size", "cup"], ["quantity", 1.0], ["created_at", "2015-02-11 04:10:49.342068"], ["updated_at", "2015-02-11 04:10:49.342068"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "nutritions" ("name", "daily_carb", "daily_fat", "daily_protein", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Paleo"], ["daily_carb", 100], ["daily_fat", 120], ["daily_protein", 160], ["created_at", "2015-02-11 04:10:49.348075"], ["updated_at", "2015-02-11 04:10:49.348075"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "nutritions" ("name", "daily_carb", "daily_fat", "daily_protein", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Low Fat"], ["daily_carb", 150], ["daily_fat", 20], ["daily_protein", 80], ["created_at", "2015-02-11 04:10:49.355931"], ["updated_at", "2015-02-11 04:10:49.355931"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "nutritions" ("name", "daily_carb", "daily_fat", "daily_protein", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Atkins"], ["daily_carb", 50], ["daily_fat", 10], ["daily_protein", 150], ["created_at", "2015-02-11 04:10:49.362478"], ["updated_at", "2015-02-11 04:10:49.362478"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "nutritions" ("name", "daily_carb", "daily_fat", "daily_protein", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ketone"], ["daily_carb", 50], ["daily_fat", 400], ["daily_protein", 145], ["created_at", "2015-02-11 04:10:49.370592"], ["updated_at", "2015-02-11 04:10:49.370592"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "nutritions" ("name", "daily_carb", "daily_fat", "daily_protein", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Healthy Food Guide"], ["daily_carb", 310], ["daily_fat", 70], ["daily_protein", 80], ["created_at", "2015-02-11 04:10:49.381069"], ["updated_at", "2015-02-11 04:10:49.381069"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "meals" ("meal_type", "meal_date", "protein_guess", "carb_guess", "fat_guess", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["meal_type", "lunch"], ["meal_date", "2011-09-19"], ["protein_guess", 30], ["carb_guess", 20], ["fat_guess", 10], ["created_at", "2015-02-11 04:10:49.389380"], ["updated_at", "2015-02-11 04:10:49.389380"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "meals" ("meal_type", "meal_date", "protein_guess", "carb_guess", "fat_guess", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["meal_type", "lunch"], ["meal_date", "2014-11-12"], ["protein_guess", 25], ["carb_guess", 33], ["fat_guess", 13], ["created_at", "2015-02-11 04:10:49.399778"], ["updated_at", "2015-02-11 04:10:49.399778"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "meals" ("meal_type", "meal_date", "protein_guess", "carb_guess", "fat_guess", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["meal_type", "dinner"], ["meal_date", "2013-02-22"], ["protein_guess", 40], ["carb_guess", 25], ["fat_guess", 9], ["created_at", "2015-02-11 04:10:49.406741"], ["updated_at", "2015-02-11 04:10:49.406741"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "meals" ("meal_type", "meal_date", "protein_guess", "carb_guess", "fat_guess", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["meal_type", "breakfast"], ["meal_date", "2015-05-05"], ["protein_guess", 31], ["carb_guess", 24], ["fat_guess", 10], ["created_at", "2015-02-11 04:10:49.413248"], ["updated_at", "2015-02-11 04:10:49.413248"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "nutrition_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["nutrition_id", 61], ["updated_at", "2015-02-11 04:10:49.441060"], ["id", 49]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "nutrition_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["nutrition_id", 61], ["updated_at", "2015-02-11 04:10:49.452002"], ["id", 50]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "nutrition_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["nutrition_id", 64], ["updated_at", "2015-02-11 04:10:49.457244"], ["id", 51]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "nutrition_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["nutrition_id", 64], ["updated_at", "2015-02-11 04:10:49.462835"], ["id", 52]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "meals" SET "user_id" = $1, "updated_at" = $2 WHERE "meals"."id" = $3[0m  [["user_id", 49], ["updated_at", "2015-02-11 04:10:49.470563"], ["id", 91]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "meals" SET "user_id" = $1, "updated_at" = $2 WHERE "meals"."id" = $3  [["user_id", 50], ["updated_at", "2015-02-11 04:10:49.476826"], ["id", 92]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "meals" SET "user_id" = $1, "updated_at" = $2 WHERE "meals"."id" = $3[0m  [["user_id", 51], ["updated_at", "2015-02-11 04:10:49.484252"], ["id", 93]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "meals" SET "user_id" = $1, "updated_at" = $2 WHERE "meals"."id" = $3  [["user_id", 52], ["updated_at", "2015-02-11 04:10:49.490234"], ["id", 94]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "foods" SET "meal_id" = $1, "updated_at" = $2 WHERE "foods"."id" = $3[0m  [["meal_id", 91], ["updated_at", "2015-02-11 04:10:49.496601"], ["id", 75]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "foods" SET "meal_id" = $1, "updated_at" = $2 WHERE "foods"."id" = $3  [["meal_id", 92], ["updated_at", "2015-02-11 04:10:49.502753"], ["id", 74]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "foods" SET "meal_id" = $1, "updated_at" = $2 WHERE "foods"."id" = $3[0m  [["meal_id", 93], ["updated_at", "2015-02-11 04:10:49.508215"], ["id", 73]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "foods" SET "meal_id" = $1, "updated_at" = $2 WHERE "foods"."id" = $3  [["meal_id", 94], ["updated_at", "2015-02-11 04:10:49.513314"], ["id", 72]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mFood Load (0.8ms)[0m  SELECT "foods".* FROM "foods"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "foods" WHERE "foods"."id" = $1  [["id", 75]]
+  [1m[36m (8.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 74]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "foods" WHERE "foods"."id" = $1  [["id", 73]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "foods" WHERE "foods"."id" = $1[0m  [["id", 72]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 49]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 50]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 51]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 52]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mMeal Load (0.6ms)[0m  SELECT "meals".* FROM "meals"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 91]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 92]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "meals" WHERE "meals"."id" = $1  [["id", 93]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "meals" WHERE "meals"."id" = $1[0m  [["id", 94]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mNutrition Load (0.5ms)[0m  [1mSELECT "nutritions".* FROM "nutritions"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "nutritions" WHERE "nutritions"."id" = $1[0m  [["id", 61]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "nutritions" WHERE "nutritions"."id" = $1  [["id", 62]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "nutritions" WHERE "nutritions"."id" = $1[0m  [["id", 63]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "nutritions" WHERE "nutritions"."id" = $1  [["id", 64]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "nutritions" WHERE "nutritions"."id" = $1[0m  [["id", 65]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "gender", "activity_level", "weight", "height", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["name", "Luke"], ["gender", "male"], ["activity_level", "very high"], ["weight", 74], ["height", 173], ["password_digest", "$2a$10$Zw6MAS8lVxrISmo2sCYJNeeJqbokVPMhV3SaNuEs1RZB52g0Z3EQK"], ["created_at", "2015-02-11 04:12:44.771132"], ["updated_at", "2015-02-11 04:12:44.771132"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "activity_level", "weight", "height", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Adam"], ["gender", "male"], ["activity_level", "high"], ["weight", 86], ["height", 181], ["password_digest", "$2a$10$HV07UnYRo8hUsua5XelbMeF4doln0UO90gv8dnf0Y9tl9QZAboX.S"], ["created_at", "2015-02-11 04:12:44.849320"], ["updated_at", "2015-02-11 04:12:44.849320"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "gender", "activity_level", "weight", "height", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["name", "Chad"], ["gender", "male"], ["activity_level", "very high"], ["weight", 99], ["height", 184], ["password_digest", "$2a$10$V1lzbpkGCI73BTUqCv/wh..eQwnsSdNa8.o/a7rHgo0x3Xz3hIK6K"], ["created_at", "2015-02-11 04:12:44.925740"], ["updated_at", "2015-02-11 04:12:44.925740"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "gender", "activity_level", "weight", "height", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Kate"], ["gender", "male"], ["activity_level", "moderate"], ["weight", 55], ["height", 163], ["password_digest", "$2a$10$esykYzryHeONlsSLbumBq.92vGVJY//KOTzRIwdW1KTtyqfspP4cG"], ["created_at", "2015-02-11 04:12:45.006465"], ["updated_at", "2015-02-11 04:12:45.006465"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "nutritions" ("name", "daily_carb", "daily_fat", "daily_protein", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Paleo"], ["daily_carb", 100], ["daily_fat", 120], ["daily_protein", 160], ["created_at", "2015-02-11 04:12:45.012323"], ["updated_at", "2015-02-11 04:12:45.012323"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "nutritions" ("name", "daily_carb", "daily_fat", "daily_protein", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Low Fat"], ["daily_carb", 150], ["daily_fat", 20], ["daily_protein", 80], ["created_at", "2015-02-11 04:12:45.018031"], ["updated_at", "2015-02-11 04:12:45.018031"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "nutritions" ("name", "daily_carb", "daily_fat", "daily_protein", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Atkins"], ["daily_carb", 50], ["daily_fat", 10], ["daily_protein", 150], ["created_at", "2015-02-11 04:12:45.023616"], ["updated_at", "2015-02-11 04:12:45.023616"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "nutritions" ("name", "daily_carb", "daily_fat", "daily_protein", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ketone"], ["daily_carb", 50], ["daily_fat", 400], ["daily_protein", 145], ["created_at", "2015-02-11 04:12:45.028064"], ["updated_at", "2015-02-11 04:12:45.028064"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "nutritions" ("name", "daily_carb", "daily_fat", "daily_protein", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["name", "Healthy Food Guide"], ["daily_carb", 310], ["daily_fat", 70], ["daily_protein", 80], ["created_at", "2015-02-11 04:12:45.032913"], ["updated_at", "2015-02-11 04:12:45.032913"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "nutrition_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["nutrition_id", 66], ["updated_at", "2015-02-11 04:12:45.049639"], ["id", 53]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "nutrition_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["nutrition_id", 66], ["updated_at", "2015-02-11 04:12:45.058854"], ["id", 54]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "nutrition_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["nutrition_id", 69], ["updated_at", "2015-02-11 04:12:45.065058"], ["id", 55]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "nutrition_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["nutrition_id", 69], ["updated_at", "2015-02-11 04:12:45.071570"], ["id", 56]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
