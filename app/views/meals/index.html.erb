@@ -2,8 +2,7 @@
 
 <% @meals.each do |meal| %>
   <p>
-    <%= meal.meal_date.strftime('%e %B, %Y') %>
-    <%= meal.meal_type %>
+    <%= link_to("#{meal.meal_date.strftime('%e %B, %Y')} #{meal.meal_type}", meal_path(meal)) %>
   </p>
 <% end %>  
 

@@ -7,8 +7,8 @@ Rails.application.routes.draw do
     resources :foods 
     post '/quantity' => 'foods#quantity'
     post '/food_to_meal' => 'foods#food_to_meal'
-    
   end
+
 
   get '/login' => 'session#new'
   post '/login' => 'session#create'

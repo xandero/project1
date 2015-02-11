@@ -6,23 +6,17 @@
   <li>Need to sum individual macros for the various foods within the meal and then display here.</li>
 </ul>
 
-<% @meal.foods.each do |food| %>
-<p>
-<%= food.quantity %>
-<%= food.serving_size %>
-of <%= food.name %>
-<% end %>
-</p>
+<ul>
+  <li>Total Carbs: <%= @meal.foods.inject(0){|sum ,f| sum += f.carb_amount}.round(1) %></li>
+  <li>Total Protein: <%= @meal.foods.inject(0){|sum ,f| sum += f.protein_amount}.round(1) %></li>
+  <li>Total Fat: <%= @meal.foods.inject(0){|sum ,f| sum += f.fat_amount}.round(1) %></li>
+</ul>
 
-
-  
-  <%= if meals.food.exist? do |food| %>
-  <p>
-    <%= food.name food.quantity food.serving_size %>
-  </p>
-  <% end %>
-
-
+<ul>
+  <li>Guessed Carbs: <%= @meal.carb_guess %></li>
+  <li>Guessed Protein: <%= @meal.protein_guess %></li>
+  <li>Guessed Fat: <%= @meal.fat_guess %></li>
+</ul>
 
 <p>
   <%= link_to 'Add Food', new_meal_food_path(@meal) %>

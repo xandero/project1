@@ -5,7 +5,7 @@ Standard serving: <%= @food_data['nf_serving_size_qty'] %> <%= @food_data['nf_se
 <p> 
   <%= form_tag(meal_food_to_meal_path(@meal)) do %>
   How many servings did you have? 
-  <%= number_field_tag :quantity, :post, :step => 0.01 %>
+  <%= number_field_tag :quantity, :post, :step => 0.1 %>
   <%= hidden_field_tag :carb_amount, @food_data['nf_total_carbohydrate'].to_f %>
   <%= hidden_field_tag :fat_amount, @food_data['nf_total_fat'].to_f %>
   <%= hidden_field_tag :protein_amount, @food_data['nf_protein'].to_f %>

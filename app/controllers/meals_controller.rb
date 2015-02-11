@@ -14,6 +14,11 @@ class MealsController < ApplicationController
 
   def show
     @meal = Meal.find params[:id]
+
+    # @meal_carbs = 
+    # @meal_protein =
+    # @meal_fat = 
+
   end
 
   def destroy
