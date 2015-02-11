@@ -1,0 +1,12 @@
+<h3>Here's your perceived vs actual macro values</h3>
+
+<ul>
+  <li>Guessed Carbs: <%= @meal.carb_guess %></li>
+  <li>Guessed Protein: <%= @meal.protein_guess %></li>
+  <li>Guessed Fat: <%= @meal.fat_guess %></li>
+</ul>
+<ul>
+  <li>Total Carbs: <%= @meal.foods.inject(0){|sum ,f| sum += f.carb_amount}.round(1) %></li>
+  <li>Total Protein: <%= @meal.foods.inject(0){|sum ,f| sum += f.protein_amount}.round(1) %></li>
+  <li>Total Fat: <%= @meal.foods.inject(0){|sum ,f| sum += f.fat_amount}.round(1) %></li>
+</ul>

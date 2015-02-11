@@ -2,8 +2,12 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      session[:user_id] = user.id
-      redirect_to root_path
+      session[:user_id] = @user.id
+      if !@user.dob.nil?
+        redirect_to meals_path
+        else 
+          redirect_to edit_user_path(@user)
+      end
     else
       render :new
     end
@@ -15,12 +19,16 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find params[:id]
+
   end
 
   def update
     user = User.find params[:id]
-    user.update user_params
-    redirect_to user
+    if user.update user_params
+      redirect_to user
+    else
+      render :edit
+    end
   end
 
   def show
@@ -30,7 +38,7 @@ class UsersController < ApplicationController
     @user.height = @user.height.to_f
 
     # This following formula is based on the Mifflin - St Jeor equation to determine daily calorie intake.
-    if @user.gender == 'male'
+    if @user.gender == 'Male'
       @calories = ((30 + @user.activity_level.to_f)/30 * (@user.weight * 10) + (6.25 * @user.height) - (5 * @user.age) + 5.0)
     else
       @calories = ((30 + @user.activity_level.to_f)/30 * (@user.weight * 10) + (6.25 * @user.height) - (5 * @user.age) - 161.0)
@@ -46,7 +54,7 @@ class UsersController < ApplicationController
 
     private
   def user_params
-    params.require(:user).permit(:name, :password, :password_confirmation, :dob, :gender, :activity_level, :weight, :height, :meal_id, :nutrition_plan)
+    params.require(:user).permit(:name, :password, :password_confirmation, :dob, :gender, :activity_level, :weight, :height, :meal_id, :nutrition_id)
   end
 
   # def check_if_admin

@@ -16,6 +16,10 @@ class MealsController < ApplicationController
     @meal = Meal.find params[:id]
   end
 
+  def complete
+    @meal = Meal.find params[:meal_id]
+  end
+
   def destroy
     meal = Meal.find params[:id]
     meal.destroy

@@ -1,15 +1,7 @@
 <h1><%= @meal.meal_date %></h1>
 <h3>Meal Details: </h3> 
 <ul>
-  <li>Type: <%= @meal.meal_type %></li>
-  <li>Date: <%= @meal.meal_date.strftime('%e %B, %Y') %></li>
-  <li>Need to sum individual macros for the various foods within the meal and then display here.</li>
-</ul>
-
-<ul>
-  <li>Total Carbs: <%= @meal.foods.inject(0){|sum ,f| sum += f.carb_amount}.round(1) %></li>
-  <li>Total Protein: <%= @meal.foods.inject(0){|sum ,f| sum += f.protein_amount}.round(1) %></li>
-  <li>Total Fat: <%= @meal.foods.inject(0){|sum ,f| sum += f.fat_amount}.round(1) %></li>
+  <li><%= @meal.meal_type %>, <%= @meal.meal_date.strftime('%e %B, %Y') %></li>
 </ul>
 
 <ul>
@@ -18,12 +10,18 @@
   <li>Guessed Fat: <%= @meal.fat_guess %></li>
 </ul>
 
+<% @meal.foods.each do |food| %>
+  <p>
+    <%= food.quantity %><%= food.name %>
+  </p>
+<% end %> 
+
 
 <p>
   <%= link_to 'Add Food', new_meal_food_path(@meal) %>
 </p>
 <p>
-  <%= link_to 'All Foods Added', meals_path %>
+  <%= link_to 'All Foods Added', meal_complete_path(@meal) %>
 </p>
 <p>
   <%= link_to 'Delete meal', @meal, :method => 'delete', :data => { :confirm => "Are you sure you want to delete this meal?" } %>

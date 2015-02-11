@@ -1,11 +1,7 @@
 <h1>Nutrition Plans</h1>
 
 <% @nutritions.each do |nutrition| %>
-  <ul>
-    <li>Name: <%= nutrition.name %></li>
-    <li>Daily Carbohydrates: <%= nutrition.daily_carb %></li>
-    <li>Daily Fat: <%= nutrition.daily_fat %></li>
-    <li>Daily Protein: <%= nutrition.daily_protein %></li>
-  </ul>
+  <h3><%= nutrition.name %></h3>
+  <p><%= nutrition.description %></p>
 <% end %>
 

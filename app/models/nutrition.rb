@@ -9,6 +9,7 @@
 #  daily_protein :integer
 #  created_at    :datetime
 #  updated_at    :datetime
+#  description   :string
 #
 
 class Nutrition < ActiveRecord::Base

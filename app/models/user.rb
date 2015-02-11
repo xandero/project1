@@ -21,7 +21,9 @@ class User < ActiveRecord::Base
   has_many :meals
 
   def age
-    Date.today.year - dob.year
+    Date.today.year - self.dob.year
   end
+
+validates :name, :presence => true, :uniqueness => true
 
 end

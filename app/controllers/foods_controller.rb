@@ -43,7 +43,7 @@ class FoodsController < ApplicationController
     @food.protein_amount = protein_amount
     @food.save
 
-    redirect_to meals_path(@meal)
+    redirect_to meal_path(@meal)
 
   end
 
