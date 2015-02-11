@@ -51957,3 +51957,1460 @@ Processing by PagesController#faq as
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 70]]
   Rendered pages/faq.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 99ms (Views: 95.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/faq.70" for ::1 at 2015-02-11 23:04:47 +1100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#faq as 
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 70]]
+  Rendered pages/faq.html.erb within layouts/application (1.8ms)
+Completed 500  in 262ms
+
+NoMethodError - undefined method `contact_path' for #<#<Class:0x007fe22df3fdb0>:0x007fe22df4f030>:
+  app/helpers/application_helper.rb:11:in `nav_menu'
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__77120081010211429_70304714891120'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2f366fa92f75d2f9/variables" for ::1 at 2015-02-11 23:04:48 +1100
+
+
+Started GET "/faq.70" for ::1 at 2015-02-11 23:05:24 +1100
+Processing by PagesController#faq as 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 70]]
+  Rendered pages/faq.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 133ms (Views: 116.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/faq.70" for ::1 at 2015-02-11 23:05:38 +1100
+Processing by PagesController#faq as 
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 70]]
+  Rendered pages/faq.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 139ms (Views: 117.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/contact.70" for ::1 at 2015-02-11 23:05:39 +1100
+
+ActionController::RoutingError - uninitialized constant PageController:
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:62:in `rescue in controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:57:in `controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:38:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/contact.70" for ::1 at 2015-02-11 23:05:39 +1100
+
+ActionController::RoutingError - uninitialized constant PageController:
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:62:in `rescue in controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:57:in `controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:38:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/a78e44287f23d082/variables" for ::1 at 2015-02-11 23:05:39 +1100
+
+NameError (wrong local variable name `#$!' for #<Binding:0x007fe22fa3e490>):
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:73:in `local_variable_get'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:73:in `block in local_variables'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:71:in `each'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:71:in `each_with_object'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:71:in `local_variables'
+  (erubis:52:in `render'
+  erubis (2.7.0) lib/erubis/evaluator.rb:65:in `eval'
+  erubis (2.7.0) lib/erubis/evaluator.rb:65:in `result'
+  better_errors (2.1.1) lib/better_errors/error_page.rb:30:in `render'
+  better_errors (2.1.1) lib/better_errors/error_page.rb:37:in `do_variables'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:132:in `internal_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:75:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.8ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (86.4ms)
+
+
+Started POST "/__better_errors/a78e44287f23d082/variables" for ::1 at 2015-02-11 23:05:53 +1100
+
+NameError (wrong local variable name `#$!' for #<Binding:0x007fe22fa3e490>):
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:73:in `local_variable_get'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:73:in `block in local_variables'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:71:in `each'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:71:in `each_with_object'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:71:in `local_variables'
+  (erubis:52:in `render'
+  erubis (2.7.0) lib/erubis/evaluator.rb:65:in `eval'
+  erubis (2.7.0) lib/erubis/evaluator.rb:65:in `result'
+  better_errors (2.1.1) lib/better_errors/error_page.rb:30:in `render'
+  better_errors (2.1.1) lib/better_errors/error_page.rb:37:in `do_variables'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:132:in `internal_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:75:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.4ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (72.2ms)
+
+
+Started POST "/__better_errors/a78e44287f23d082/variables" for ::1 at 2015-02-11 23:05:58 +1100
+
+
+Started POST "/__better_errors/a78e44287f23d082/variables" for ::1 at 2015-02-11 23:06:01 +1100
+
+
+Started POST "/__better_errors/a78e44287f23d082/variables" for ::1 at 2015-02-11 23:06:06 +1100
+
+
+Started POST "/__better_errors/a78e44287f23d082/eval" for ::1 at 2015-02-11 23:06:32 +1100
+
+
+Started POST "/__better_errors/a78e44287f23d082/eval" for ::1 at 2015-02-11 23:06:39 +1100
+
+
+Started POST "/__better_errors/a78e44287f23d082/eval" for ::1 at 2015-02-11 23:06:42 +1100
+
+
+Started GET "/faq.70" for ::1 at 2015-02-11 23:06:50 +1100
+Processing by PagesController#faq as 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 70]]
+  Rendered pages/faq.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 91ms (Views: 87.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-02-11 23:06:51 +1100
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 70]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 70]]
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 96ms (Views: 91.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact.70" for ::1 at 2015-02-11 23:06:54 +1100
+
+ActionController::RoutingError - uninitialized constant PageController:
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:62:in `rescue in controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:57:in `controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:38:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/contact.70" for ::1 at 2015-02-11 23:06:54 +1100
+
+ActionController::RoutingError - uninitialized constant PageController:
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:62:in `rescue in controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:57:in `controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:38:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/1491b346e988326d/variables" for ::1 at 2015-02-11 23:06:54 +1100
+
+NameError (wrong local variable name `#$!' for #<Binding:0x007fe22986b948>):
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:73:in `local_variable_get'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:73:in `block in local_variables'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:71:in `each'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:71:in `each_with_object'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:71:in `local_variables'
+  (erubis:52:in `render'
+  erubis (2.7.0) lib/erubis/evaluator.rb:65:in `eval'
+  erubis (2.7.0) lib/erubis/evaluator.rb:65:in `result'
+  better_errors (2.1.1) lib/better_errors/error_page.rb:30:in `render'
+  better_errors (2.1.1) lib/better_errors/error_page.rb:37:in `do_variables'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:132:in `internal_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:75:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (82.0ms)
+
+
+Started GET "/routes" for ::1 at 2015-02-11 23:07:17 +1100
+
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (3.7ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (128.6ms)
+
+
+Started GET "/contact.70" for ::1 at 2015-02-11 23:07:32 +1100
+
+ActionController::RoutingError - uninitialized constant PageController:
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:62:in `rescue in controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:57:in `controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:38:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/1fb047a452bf668e/variables" for ::1 at 2015-02-11 23:07:32 +1100
+
+NameError (wrong local variable name `#$!' for #<Binding:0x007fe22f0d27f8>):
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:73:in `local_variable_get'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:73:in `block in local_variables'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:71:in `each'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:71:in `each_with_object'
+  better_errors (2.1.1) lib/better_errors/stack_frame.rb:71:in `local_variables'
+  (erubis:52:in `render'
+  erubis (2.7.0) lib/erubis/evaluator.rb:65:in `eval'
+  erubis (2.7.0) lib/erubis/evaluator.rb:65:in `result'
+  better_errors (2.1.1) lib/better_errors/error_page.rb:30:in `render'
+  better_errors (2.1.1) lib/better_errors/error_page.rb:37:in `do_variables'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:132:in `internal_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:75:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (75.5ms)
+
+
+Started GET "/routes" for ::1 at 2015-02-11 23:09:09 +1100
+
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (109.0ms)
+
+
+Started GET "/contact.70" for ::1 at 2015-02-11 23:09:11 +1100
+Processing by PagesController#contact as 
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 70]]
+  Rendered pages/contact.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 115ms (Views: 97.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/contact.70" for ::1 at 2015-02-11 23:09:32 +1100
+Processing by PagesController#contact as 
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 70]]
+  Rendered pages/contact.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 102ms (Views: 87.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/faq.70" for ::1 at 2015-02-11 23:09:56 +1100
+Processing by PagesController#faq as 
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 70]]
+  Rendered pages/faq.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 92ms (Views: 87.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-02-11 23:09:58 +1100
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 70]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 70]]
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 83ms (Views: 78.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/welcome" for ::1 at 2015-02-11 23:10:03 +1100
+Processing by PagesController#welcome as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 70]]
+  Rendered pages/welcome.html.erb within layouts/application (6.8ms)
+Completed 500  in 18ms
+
+NoMethodError - undefined method `name' for nil:NilClass:
+  app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb__2436657205132289049_70304718894360'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/xander/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/fa813d12bd3158d1/variables" for ::1 at 2015-02-11 23:10:03 +1100
+
+
+Started POST "/__better_errors/fa813d12bd3158d1/eval" for ::1 at 2015-02-11 23:10:13 +1100
+
+
+Started DELETE "/login" for ::1 at 2015-02-11 23:10:40 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Kv3/430Avo64Hqb/8DPem3uvz9d/EEi9oxUhjO0XMY0lnEdZbNhA7M2xue2oPX8NgTvpDOihhDu1w4FtXai6JA=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 70]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-02-11 23:10:40 +1100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 67ms (Views: 65.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-02-11 23:10:42 +1100
+Processing by SessionController#new as HTML
+  Rendered session/new.haml within layouts/application (2.6ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2015-02-11 23:10:44 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w7qhrLIIgqsG3JaM53IyfZGy3hb18d5nLKLrOFK8E4HM2xkWo9B8yXNziZ6/fJPrayb4zWJAEuE6dEvZ4gOYKA==", "username"=>"Bob", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT 1[0m  [["name", "Bob"]]
+Redirected to http://localhost:3000/meals
+Completed 302 Found in 79ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/meals" for ::1 at 2015-02-11 23:10:45 +1100
+Processing by MealsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 70]]
+  [1m[36mMeal Load (0.6ms)[0m  [1mSELECT "meals".* FROM "meals" WHERE "meals"."user_id" = $1[0m  [["user_id", 70]]
+  Rendered meals/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 118ms (Views: 93.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/meals/98" for ::1 at 2015-02-11 23:10:47 +1100
+Processing by MealsController#show as HTML
+  Parameters: {"id"=>"98"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 70]]
+  [1m[36mMeal Load (0.3ms)[0m  [1mSELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT 1[0m  [["id", 98]]
+  [1m[35mFood Load (1.0ms)[0m  SELECT "foods".* FROM "foods" WHERE "foods"."meal_id" = $1  [["meal_id", 98]]
+  Rendered meals/show.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 111ms (Views: 101.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/users/70" for ::1 at 2015-02-11 23:10:49 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 70]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 70]]
+  [1m[36mNutrition Load (0.6ms)[0m  [1mSELECT  "nutritions".* FROM "nutritions" WHERE "nutritions"."id" = $1 LIMIT 1[0m  [["id", 78]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 102ms (Views: 69.8ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/login" for ::1 at 2015-02-11 23:10:51 +1100
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+Ew/6/O8qyDeFvQ9q8JmcewYgNsWas7ECC6Oi4gSc773LYdR4mRVQqu56y/zzMfnFoymAIHbAkIe+C5qOK34Fw=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 70]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-02-11 23:10:51 +1100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 70ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-02-11 23:10:53 +1100
+Processing by SessionController#new as HTML
+  Rendered session/new.haml within layouts/application (0.8ms)
+Completed 200 OK in 79ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2015-02-11 23:11:02 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F52qEQNnVmqX10IHYdib4tGSMWMuoAhgALTTDEg1yX4Y/BKrEr+oCOJ4XRU51jp0KwYXuLkRxOYWYnPt+IpC1w==", "username"=>"Kelly", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = $1 LIMIT 1[0m  [["name", "Kelly"]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2015-02-11 23:11:02 +1100
+Processing by SessionController#new as HTML
+  Rendered session/new.haml within layouts/application (1.9ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-02-11 23:11:08 +1100
+Processing by UsersController#new as HTML
+  Rendered users/new.haml within layouts/application (16.3ms)
+Completed 200 OK in 91ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-02-11 23:11:14 +1100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p5OjtYq12dMg3E8DYnhLUBq9rs+BIa1rd17YSmPqTwWo8hsPm20nsVVzUBE6durG4CmIFBaQYe1hiHir01XErA==", "user"=>{"name"=>"Kelly", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Kelly' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("name", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "Kelly"], ["password_digest", "$2a$10$1uZN69q1eFXPbKbGcy6KJebkmh.V2rRnOl/FuoDj3CyG1TKTSuKVG"], ["created_at", "2015-02-11 12:11:14.367222"], ["updated_at", "2015-02-11 12:11:14.367222"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/71/edit
+Completed 302 Found in 104ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/users/71/edit" for ::1 at 2015-02-11 23:11:14 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"71"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mNutrition Load (0.8ms)[0m  SELECT "nutritions".* FROM "nutritions"
+  Rendered users/_form.html.erb (13.1ms)
+  Rendered users/edit.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 96ms (Views: 88.2ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/users/71" for ::1 at 2015-02-11 23:11:41 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8b9JlZCt+PxOh2R9R4PJTs44BzXkM9I2SSn3zPmEVN3+3vEvgXUGnjsoe28fjWjYNKwh7nOCHrBf/1ctSTvfdA==", "user"=>{"name"=>"Kelly", "dob"=>"1975-02-05", "gender"=>"Male", "activity_level"=>"7", "weight"=>"65", "height"=>"163", "nutrition_id"=>"79"}, "commit"=>"Update User", "id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Kelly' AND "users"."id" != 71) LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "dob" = $1, "gender" = $2, "activity_level" = $3, "weight" = $4, "height" = $5, "nutrition_id" = $6, "updated_at" = $7 WHERE "users"."id" = $8[0m  [["dob", "1975-02-05"], ["gender", "Male"], ["activity_level", "7"], ["weight", 65], ["height", 163], ["nutrition_id", 79], ["updated_at", "2015-02-11 12:11:41.800784"], ["id", 71]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/71
+Completed 302 Found in 26ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/users/71" for ::1 at 2015-02-11 23:11:41 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mNutrition Load (1.3ms)[0m  [1mSELECT  "nutritions".* FROM "nutritions" WHERE "nutritions"."id" = $1 LIMIT 1[0m  [["id", 79]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 76ms (Views: 64.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/71/edit" for ::1 at 2015-02-11 23:11:49 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"71"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mNutrition Load (0.5ms)[0m  SELECT "nutritions".* FROM "nutritions"
+  Rendered users/_form.html.erb (7.3ms)
+  Rendered users/edit.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 89ms (Views: 78.6ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/users/71" for ::1 at 2015-02-11 23:11:53 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UGjMeXrZWYWkbOWHA8O1X1cV4KKcA0GPfr10VsAbUAFfCXTDawGn59HD+pVbzRTJrYHGeQuyjQloa9S3cKTbqA==", "user"=>{"name"=>"Kelly", "dob"=>"1975-02-05", "gender"=>"Female", "activity_level"=>"7", "weight"=>"65", "height"=>"163", "nutrition_id"=>"79"}, "commit"=>"Update User", "id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Kelly' AND "users"."id" != 71) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "gender" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["gender", "Female"], ["updated_at", "2015-02-11 12:11:53.410620"], ["id", 71]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/71
+Completed 302 Found in 22ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users/71" for ::1 at 2015-02-11 23:11:53 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mNutrition Load (0.6ms)[0m  [1mSELECT  "nutritions".* FROM "nutritions" WHERE "nutritions"."id" = $1 LIMIT 1[0m  [["id", 79]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 92ms (Views: 80.6ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/users/71" for ::1 at 2015-02-11 23:12:02 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zi2HReWv8wN0cBuoy7XRYkJev6RlAN5L1//ZEtjiBR9pTD//9HcNYQHfBLqTu3D0uMqZf/KxEs3BKXnzaF2Otg==", "user"=>{"name"=>"Kelly", "dob"=>"1975-02-05", "gender"=>"Male", "activity_level"=>"7", "weight"=>"65", "height"=>"163", "nutrition_id"=>"79"}, "commit"=>"Update User", "id"=>"71"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Kelly' AND "users"."id" != 71) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "gender" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["gender", "Male"], ["updated_at", "2015-02-11 12:12:02.703558"], ["id", 71]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/71
+Completed 302 Found in 21ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users/71" for ::1 at 2015-02-11 23:12:02 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mNutrition Load (0.5ms)[0m  SELECT  "nutritions".* FROM "nutritions" WHERE "nutritions"."id" = $1 LIMIT 1  [["id", 79]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 89ms (Views: 79.6ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/users/71" for ::1 at 2015-02-11 23:12:08 +1100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zi2HReWv8wN0cBuoy7XRYkJev6RlAN5L1//ZEtjiBR9pTD//9HcNYQHfBLqTu3D0uMqZf/KxEs3BKXnzaF2Otg==", "user"=>{"name"=>"Kelly", "dob"=>"1975-02-05", "gender"=>"Female", "activity_level"=>"7", "weight"=>"65", "height"=>"163", "nutrition_id"=>"79"}, "commit"=>"Update User", "id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE ("users"."name" = 'Kelly' AND "users"."id" != 71) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "gender" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["gender", "Female"], ["updated_at", "2015-02-11 12:12:08.618927"], ["id", 71]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/71
+Completed 302 Found in 19ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/users/71" for ::1 at 2015-02-11 23:12:08 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mNutrition Load (0.6ms)[0m  [1mSELECT  "nutritions".* FROM "nutritions" WHERE "nutritions"."id" = $1 LIMIT 1[0m  [["id", 79]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 93ms (Views: 78.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/meals.71" for ::1 at 2015-02-11 23:12:25 +1100
+Processing by MealsController#index as 
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mMeal Load (0.4ms)[0m  [1mSELECT "meals".* FROM "meals" WHERE "meals"."user_id" = $1[0m  [["user_id", 71]]
+  Rendered meals/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 106ms (Views: 102.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/meals/new.71" for ::1 at 2015-02-11 23:12:27 +1100
+Processing by MealsController#new as 
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  Rendered meals/_form.html.erb (3.1ms)
+  Rendered meals/new.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 123ms (Views: 120.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/meals" for ::1 at 2015-02-11 23:12:42 +1100
+Processing by MealsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nrfAV4fvr5R23PqSf6Bf3BRRSLkeet33aZlvh4wCU+mR1njtljdR9gNz5YAnrv5K7sVuYonLEXF/T89mPL3YQA==", "meal"=>{"meal_type"=>"Snack", "meal_date"=>"2015-02-10", "protein_guess"=>"22", "carb_guess"=>"19", "fat_guess"=>"6"}, "commit"=>"Create Meal"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "meals" ("meal_type", "meal_date", "protein_guess", "carb_guess", "fat_guess", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["meal_type", "Snack"], ["meal_date", "2015-02-10"], ["protein_guess", 22], ["carb_guess", 19], ["fat_guess", 6], ["user_id", 71], ["created_at", "2015-02-11 12:12:42.126250"], ["updated_at", "2015-02-11 12:12:42.126250"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/meals/99
+Completed 302 Found in 16ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/meals/99" for ::1 at 2015-02-11 23:12:42 +1100
+Processing by MealsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mMeal Load (0.5ms)[0m  SELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT 1  [["id", 99]]
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE "foods"."meal_id" = $1[0m  [["meal_id", 99]]
+  Rendered meals/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 90ms (Views: 79.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/meals/99/foods/new" for ::1 at 2015-02-11 23:12:44 +1100
+Processing by FoodsController#new as HTML
+  Parameters: {"meal_id"=>"99"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  Rendered foods/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 89ms (Views: 85.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/meals/99/foods" for ::1 at 2015-02-11 23:12:47 +1100
+Processing by FoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iFt1KBBNKHqish09Kqh7bMCB0r8/g3ZbRjlqdi+5A+mHOs2SAZXWGNcdAi9yptr6OhX0ZKgyut1Q78qXnwaIQA==", "name"=>"bacon", "commit"=>"Search", "meal_id"=>"99"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  Rendered foods/create.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1534ms (Views: 78.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/meals/99/quantity" for ::1 at 2015-02-11 23:12:51 +1100
+Processing by FoodsController#quantity as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LpqiH60vMgaFmQrbQRvHY1+GCJeZlslOHXVZij3fg6Ih+xqlvPfMZPA2FckZFWb1pRIuTA4nBcgLo/lrjWAICw==", "selected_food"=>"513fceb575b8dbbc21001365", "meal_id"=>"99"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  Rendered foods/quantity.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1372ms (Views: 83.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/meals/99/food_to_meal" for ::1 at 2015-02-11 23:12:55 +1100
+Processing by FoodsController#food_to_meal as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sv22uBM6sQ4WbbGMy0Zu7oD9ExpIrqM15Kl0t35FmHK9nA4CAuJPbGPCrp6TSM94emk1wd8fb7Pyf9RWzvoT2w==", "quantity"=>"5", "carb_amount"=>"0.11", "fat_amount"=>"3.5", "protein_amount"=>"2.89", "meal_id"=>"99", "brand_name"=>"USDA", "item_name"=>"Bacon - 1 slice cooked", "serving_size_unit"=>"slice cooked", "nf_serving_size_qty"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "foods" ("meal_id", "name", "carb_amount", "fat_amount", "protein_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["meal_id", 99], ["name", "Bacon - 1 slice cooked"], ["carb_amount", 0.55], ["fat_amount", 17.5], ["protein_amount", 14.450000000000001], ["created_at", "2015-02-11 12:12:55.458063"], ["updated_at", "2015-02-11 12:12:55.458063"]]
+  [1m[35m (7.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/meals/99
+Completed 302 Found in 23ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/meals/99" for ::1 at 2015-02-11 23:12:55 +1100
+Processing by MealsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mMeal Load (0.4ms)[0m  SELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT 1  [["id", 99]]
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE "foods"."meal_id" = $1[0m  [["meal_id", 99]]
+  Rendered meals/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 83ms (Views: 76.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/meals/99/foods/new" for ::1 at 2015-02-11 23:12:57 +1100
+Processing by FoodsController#new as HTML
+  Parameters: {"meal_id"=>"99"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  Rendered foods/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 77ms (Views: 73.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/meals/99/foods" for ::1 at 2015-02-11 23:13:00 +1100
+Processing by FoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CR1OYh+/xZV6pP87BM6nPwN9rfuVePN/j8j8cvw+fegGfPbYDmc79w8L4ClcwAap+emLIALJP/mZHlyTTIH2QQ==", "name"=>"eggs", "commit"=>"Search", "meal_id"=>"99"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  Rendered foods/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1371ms (Views: 73.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/meals/99/quantity" for ::1 at 2015-02-11 23:13:05 +1100
+Processing by FoodsController#quantity as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RNU9yQdnSdapPC4IbdPFQbdUDsCn3LEjXroXXoNHDrVLtIVzFr+3tNyTMRo13WTXTcAoGzBtfaVIbLe/M/iFHA==", "selected_food"=>"513fceb375b8dbbc2100015d", "meal_id"=>"99"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  Rendered foods/quantity.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1272ms (Views: 72.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/meals/99/food_to_meal" for ::1 at 2015-02-11 23:13:09 +1100
+Processing by FoodsController#food_to_meal as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GeXGFfRHQ/cPViYWnihK+FRh9yTqNAunwljHn355U+UWhH6v5Z+9lXr5OQTGJuturvXR/32FxyHUjmd+zsbYTA==", "quantity"=>"4", "carb_amount"=>"1.52", "fat_amount"=>"14.43", "protein_amount"=>"17.11", "meal_id"=>"99", "brand_name"=>"USDA", "item_name"=>"Egg, whole, cooked, hard - 1 cup, chopped", "serving_size_unit"=>"cup, chopped", "nf_serving_size_qty"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "foods" ("meal_id", "name", "carb_amount", "fat_amount", "protein_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["meal_id", 99], ["name", "Egg, whole, cooked, hard - 1 cup, chopped"], ["carb_amount", 6.08], ["fat_amount", 57.72], ["protein_amount", 68.44], ["created_at", "2015-02-11 12:13:09.244914"], ["updated_at", "2015-02-11 12:13:09.244914"]]
+  [1m[35m (8.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/meals/99
+Completed 302 Found in 22ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/meals/99" for ::1 at 2015-02-11 23:13:09 +1100
+Processing by MealsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mMeal Load (0.5ms)[0m  SELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT 1  [["id", 99]]
+  [1m[36mFood Load (0.4ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE "foods"."meal_id" = $1[0m  [["meal_id", 99]]
+  Rendered meals/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 90ms (Views: 81.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/meals/99/foods/new" for ::1 at 2015-02-11 23:13:14 +1100
+Processing by FoodsController#new as HTML
+  Parameters: {"meal_id"=>"99"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  Rendered foods/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 73ms (Views: 70.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/meals/99/foods" for ::1 at 2015-02-11 23:13:18 +1100
+Processing by FoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h68ECpTfsa2ZbNF/aUh2m5RWAq1WvVggU/s36SSvbZGIzrywhQdPz+zDzm0xRtcNbsIkdsEMlKZFLZcIlBDmOA==", "name"=>"mango", "commit"=>"Search", "meal_id"=>"99"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  Rendered foods/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1409ms (Views: 78.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/meals/99/quantity" for ::1 at 2015-02-11 23:13:22 +1100
+Processing by FoodsController#quantity as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aS6J5XFAkGMn273Y1BFTw5HnA0j3WLtL60+pqMvUIUxmTzFfYJhuAVJ0osqMH/JVa3Mlk2Dpd839mQlJe2uq5Q==", "selected_food"=>"513fceb575b8dbbc2100108f", "meal_id"=>"99"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  Rendered foods/quantity.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1378ms (Views: 68.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/meals/99/food_to_meal" for ::1 at 2015-02-11 23:13:29 +1100
+Processing by FoodsController#food_to_meal as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+XYyo62cnGv8rVozPxWmz21NErFHquuGpXKJ6NaaL+r2F4oZvERiCYkCRSFnGwdZl9k0atAbJwCzpCkJZiWkQw==", "quantity"=>"1.5", "carb_amount"=>"24.72", "fat_amount"=>"0.63", "protein_amount"=>"1.35", "meal_id"=>"99", "brand_name"=>"USDA", "item_name"=>"Mangos, raw - 1 cup pieces", "serving_size_unit"=>"cup pieces", "nf_serving_size_qty"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "foods" ("meal_id", "name", "carb_amount", "fat_amount", "protein_amount", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["meal_id", 99], ["name", "Mangos, raw - 1 cup pieces"], ["carb_amount", 37.08], ["fat_amount", 0.9450000000000001], ["protein_amount", 2.0250000000000004], ["created_at", "2015-02-11 12:13:29.315670"], ["updated_at", "2015-02-11 12:13:29.315670"]]
+  [1m[35m (8.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/meals/99
+Completed 302 Found in 23ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/meals/99" for ::1 at 2015-02-11 23:13:29 +1100
+Processing by MealsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mMeal Load (0.6ms)[0m  SELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT 1  [["id", 99]]
+  [1m[36mFood Load (0.4ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE "foods"."meal_id" = $1[0m  [["meal_id", 99]]
+  Rendered meals/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 81ms (Views: 72.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/meals/99/complete" for ::1 at 2015-02-11 23:13:32 +1100
+Processing by MealsController#complete as HTML
+  Parameters: {"meal_id"=>"99"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mMeal Load (0.4ms)[0m  [1mSELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT 1[0m  [["id", 99]]
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods" WHERE "foods"."meal_id" = $1  [["meal_id", 99]]
+  Rendered meals/complete.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 113ms (Views: 106.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/meals.71" for ::1 at 2015-02-11 23:13:43 +1100
+Processing by MealsController#index as 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mMeal Load (0.4ms)[0m  SELECT "meals".* FROM "meals" WHERE "meals"."user_id" = $1  [["user_id", 71]]
+  Rendered meals/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 101ms (Views: 97.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/meals/99" for ::1 at 2015-02-11 23:13:45 +1100
+Processing by MealsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mMeal Load (0.2ms)[0m  SELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT 1  [["id", 99]]
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT "foods".* FROM "foods" WHERE "foods"."meal_id" = $1[0m  [["meal_id", 99]]
+  Rendered meals/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 82ms (Views: 76.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/meals/99/complete" for ::1 at 2015-02-11 23:13:52 +1100
+Processing by MealsController#complete as HTML
+  Parameters: {"meal_id"=>"99"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mMeal Load (0.2ms)[0m  [1mSELECT  "meals".* FROM "meals" WHERE "meals"."id" = $1 LIMIT 1[0m  [["id", 99]]
+  [1m[35mFood Load (0.4ms)[0m  SELECT "foods".* FROM "foods" WHERE "foods"."meal_id" = $1  [["meal_id", 99]]
+  Rendered meals/complete.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 75ms (Views: 69.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/71" for ::1 at 2015-02-11 23:14:17 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mNutrition Load (0.4ms)[0m  [1mSELECT  "nutritions".* FROM "nutritions" WHERE "nutritions"."id" = $1 LIMIT 1[0m  [["id", 79]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 76ms (Views: 67.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/faq.71" for ::1 at 2015-02-11 23:14:22 +1100
+Processing by PagesController#faq as 
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  Rendered pages/faq.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 102ms (Views: 98.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact.71" for ::1 at 2015-02-11 23:14:23 +1100
+Processing by PagesController#contact as 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  Rendered pages/contact.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 99ms (Views: 95.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/nutritions" for ::1 at 2015-02-11 23:14:37 +1100
+Processing by NutritionsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mNutrition Load (0.6ms)[0m  [1mSELECT "nutritions".* FROM "nutritions"[0m
+  Rendered nutritions/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 75ms (Views: 71.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-11 23:14:51 +1100
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 81ms (Views: 75.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/71" for ::1 at 2015-02-11 23:14:59 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mNutrition Load (0.3ms)[0m  SELECT  "nutritions".* FROM "nutritions" WHERE "nutritions"."id" = $1 LIMIT 1  [["id", 79]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 79ms (Views: 69.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/71/edit" for ::1 at 2015-02-11 23:15:02 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mNutrition Load (0.5ms)[0m  [1mSELECT "nutritions".* FROM "nutritions"[0m
+  Rendered users/_form.html.erb (5.6ms)
+  Rendered users/edit.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 86ms (Views: 79.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/71/edit" for ::1 at 2015-02-11 23:15:04 +1100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"71"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mNutrition Load (0.5ms)[0m  SELECT "nutritions".* FROM "nutritions"
+  Rendered users/_form.html.erb (5.1ms)
+  Rendered users/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 82ms (Views: 76.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/71" for ::1 at 2015-02-11 23:16:04 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mNutrition Load (0.2ms)[0m  [1mSELECT  "nutritions".* FROM "nutritions" WHERE "nutritions"."id" = $1 LIMIT 1[0m  [["id", 79]]
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 80ms (Views: 72.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-02-11 23:20:30 +1100
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 89ms (Views: 68.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2015-02-11 23:20:30 +1100
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 71]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 71]]
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 78ms (Views: 71.0ms | ActiveRecord: 0.5ms)

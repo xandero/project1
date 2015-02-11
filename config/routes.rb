@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   root :to => 'pages#home'
   get '/about' => 'pages#about'
   get '/faq' => 'pages#faq'
-  get '/welcome' => 'page#welcome'
+  get '/welcome' => 'pages#welcome'
+  get '/contact' => 'pages#contact'
   resources :users
   resources :nutritions, :only => [:index, :show]
 

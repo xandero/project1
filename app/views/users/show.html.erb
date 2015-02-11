@@ -2,9 +2,9 @@
 <ul>
   <li>Gender: <%= @user.gender %></li>
   <li>Date of birth: <%= @user.dob.strftime('%e %B, %Y') %></li>
-  <li>Activity Level: <%= @user.activity_level %></li>
-  <li>Height: <%= @user.height %></li>
-  <li>Weight: <%= @user.weight %></li>
+  <li>Weekly exercise: <%= @user.activity_level %> hours</li>
+  <li>Height: <%= @user.height %> cm</li>
+  <li>Weight: <%= @user.weight %> kgs</li>
   <li>Nutrition Plan: <%= @user.nutrition.name %></li>
 </ul>
 

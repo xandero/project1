@@ -19,7 +19,6 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find params[:id]
-
   end
 
   def update
@@ -49,15 +48,10 @@ class UsersController < ApplicationController
     @rec_carb = (@user.nutrition.daily_carb.to_f * @multiplier).round(1)
     @rec_fat = (@user.nutrition.daily_fat.to_f * @multiplier).round(1)
     @rec_protein = (@user.nutrition.daily_protein.to_f * @multiplier).round(1)
-
   end
 
     private
   def user_params
     params.require(:user).permit(:name, :password, :password_confirmation, :dob, :gender, :activity_level, :weight, :height, :meal_id, :nutrition_id)
   end
-
-  # def check_if_admin
-  #   redirect_to(root_path) unless @current_user.present? && @current_user.is_admin?
-  # end
 end
