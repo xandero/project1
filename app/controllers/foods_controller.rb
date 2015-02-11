@@ -2,6 +2,12 @@ class FoodsController < ApplicationController
   def index
   end
 
+  def new
+    
+    @meal = params[:meal_id]
+
+  end
+
   def create
     # @name = params[:name]
 
@@ -13,12 +19,6 @@ class FoodsController < ApplicationController
 
   end
 
-  def new
-    # @food = Food.new
-    @meal = params[:meal_id]
-
-  end
-
   def quantity
       
     url = "https://api.nutritionix.com/v1_1/item?id=#{ params[:selected_food] }&appId=92a57023&appKey=5a11032e7168104fdfa242bd3b62e636"
@@ -26,42 +26,45 @@ class FoodsController < ApplicationController
     parsed_data = JSON.parse(raw_data.body)
     @food_data = parsed_data
     @meal = params[:meal_id]
-
-    #calculate the value of macros in this amount of food then plug into params
-   
-    # meal = Meal.find params[:meal_id]
-    # food = meal.foods.create(food_params)
-    # redirect_to meal
-
+ 
   end
 
   def food_to_meal
-    url = "https://api.nutritionix.com/v1_1/item?id=#{ params[:selected_food] }&appId=92a57023&appKey=5a11032e7168104fdfa242bd3b62e636"
-    raw_data = HTTParty.get url
-    parsed_data = JSON.parse(raw_data.body)
-    @meal = params[:meal_id]
-
+    # url = "https://api.nutritionix.com/v1_1/item?id=#{ params[:selected_food] }&appId=92a57023&appKey=5a11032e7168104fdfa242bd3b62e636"
+    # raw_data = HTTParty.get url
+    # parsed_data = JSON.parse(raw_data.body)
+    
     q = params[:quantity].to_f
     carb_amount = params[:carb_amount].to_f * q
     fat_amount = params[:fat_amount].to_f * q
-    protein_amount = params[:protein_amount].to_f * q
-   
-    # meal = @current_user.meals.foods.create(food_params)
-    # redirect_to meal
+    protein_amount = params[:protein_amount].to_f * q 
+    #@food = Food.new
+    @meal = params[:meal_id]
+    @food = Food.new
+    @food.meal_id = @meal
+    @food.name = params[:item_name]
+    @food.carb_amount = carb_amount
+    @food.fat_amount = fat_amount
+    @food.protein_amount = protein_amount
+    @food.save
+
+    redirect_to meals_path(@meal)
 
   end
 
   def show
+
   end
 
   def update
+
   end
 
   def destroy
   end
 
   def food_params
-    params.require(:food).permit(:name, :serving_size, :quantity, :meal_id)
+    params.require(:food).permit(:name, :serving_size, :quantity, :meal_id, :carb_amount, :fat_amount, :protein_amount)
   end
 end
 

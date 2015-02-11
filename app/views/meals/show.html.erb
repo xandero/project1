@@ -13,6 +13,17 @@
 of <%= food.name %>
 <% end %>
 </p>
+
+
+  
+  <%= if meals.food.exist? do |food| %>
+  <p>
+    <%= food.name food.quantity food.serving_size %>
+  </p>
+  <% end %>
+
+
+
 <p>
   <%= link_to 'Add Food', new_meal_food_path(@meal) %>
 </p>

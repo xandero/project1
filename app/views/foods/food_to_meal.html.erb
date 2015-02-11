@@ -1,7 +1,7 @@
-<h3>Foof added page</h3>
+<h3>Food added page</h3>
 
 You have added <%= params[:quantity] %> <%= params[:serving_size_unit].pluralize %> of <%= params[:item_name] %> to your meal.
 
 <p>
-  <%= link_to 'Add Food', new_meal_food_path(@meal) %>
+  <%= link_to 'Add Food', meal_path(@meal) %>
 </p>

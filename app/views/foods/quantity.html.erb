@@ -8,7 +8,7 @@ Standard serving: <%= @food_data['nf_serving_size_qty'] %> <%= @food_data['nf_se
   <%= number_field_tag :quantity, :post, :step => 0.01 %>
   <%= hidden_field_tag :carb_amount, @food_data['nf_total_carbohydrate'].to_f %>
   <%= hidden_field_tag :fat_amount, @food_data['nf_total_fat'].to_f %>
-  <%= hidden_field_tag :protein_amount, @food_data['nf_total_protein'].to_f %>
+  <%= hidden_field_tag :protein_amount, @food_data['nf_protein'].to_f %>
   <%= hidden_field_tag :meal_id, @meal %>
   <%= hidden_field_tag :brand_name, @food_data['brand_name'] %>
   <%= hidden_field_tag :item_name, @food_data['item_name'] %>
