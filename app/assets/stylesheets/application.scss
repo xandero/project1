@@ -16,3 +16,15 @@
  *= require_tree .
  *= require_self
  */
+
+
+.navbar-brand {
+  font-family: 'Source Sans Pro', sans-serif; 
+  color: white; 
+  letter-spacing: 8px;
+  font-size: 28px;
+}
+
+.navbar-form navbar-right {
+  color: white;
+}

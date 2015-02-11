@@ -1,12 +1,40 @@
-<h3>Here's your perceived vs actual macro values</h3>
+<h3>Here's your guessed vs actual macro values</h3>
 
-<ul>
-  <li>Guessed Carbs: <%= @meal.carb_guess %></li>
-  <li>Guessed Protein: <%= @meal.protein_guess %></li>
-  <li>Guessed Fat: <%= @meal.fat_guess %></li>
-</ul>
-<ul>
-  <li>Total Carbs: <%= @meal.foods.inject(0){|sum ,f| sum += f.carb_amount}.round(1) %></li>
-  <li>Total Protein: <%= @meal.foods.inject(0){|sum ,f| sum += f.protein_amount}.round(1) %></li>
-  <li>Total Fat: <%= @meal.foods.inject(0){|sum ,f| sum += f.fat_amount}.round(1) %></li>
-</ul>
+<div class="row">
+  <div class="col-md-10 main">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-6">  
+        <tbody>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Guess</th>
+                <th>Actual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Carbohydrates</td>
+                <td><%= @meal.carb_guess %></td>
+                <td><%= @meal.foods.sum(:carb_amount).round(1) %></td>
+              </tr>
+              <tr>
+                <td>Protein</td>
+                <td><%= @meal.protein_guess %></td>
+                <td><%= @meal.foods.sum(:protein_amount).round(1) %></td>
+              </tr>
+              <tr>
+                <td>Fat</td>
+                <td><%= @meal.fat_guess %></td>
+                <td><%= @meal.foods.sum(:fat_amount).round(1) %></td>
+              </tr>
+            </tbody>
+          </table>
+        </tbody>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>
