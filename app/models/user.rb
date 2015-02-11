@@ -19,4 +19,9 @@ class User < ActiveRecord::Base
   has_secure_password
   belongs_to :nutrition
   has_many :meals
+
+  def age
+    Date.today.year - dob.year
+  end
+
 end

@@ -8,7 +8,7 @@ module ApplicationHelper
       #   links += "<li>#{ link_to('All users', users_path)}</li>"
       # end
 
-      links += "<li>#{ link_to('Sign out ' + @current_user.name, login_path, :method => :delete) }</li><li>#{ link_to('Edit Profile', edit_user_path(@current_user.id)) }</li><li>#{ link_to('My Meals', meals_path(@current_user.id)) }</li><li>#{ link_to('Add a Meal Entry', new_meal_path(@current_user.id)) }</li>"
+      links += "<li>#{ link_to('Sign out ' + @current_user.name, login_path, :method => :delete) }</li><li>#{ link_to('Update Profile', edit_user_path(@current_user.id)) }</li><li>#{ link_to('My Meals', meals_path(@current_user.id)) }</li><li>#{ link_to('Add a Meal Entry', new_meal_path(@current_user.id)) }</li><li>#{ link_to('My Profile', user_path(@current_user.id)) }</li>"
     else
       links += "<li>#{ link_to('Sign up', new_user_path) }</li><li>#{ link_to('Log in', login_path) }</li>"
     end

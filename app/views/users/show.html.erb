@@ -1,9 +1,20 @@
-<h1>Hey <%= @user.name %>, these are your details we have on record:</h1>
+<h4>Hey <%= @user.name %>, please ensure your details are up to date so we can accurately determine your recommended daily macronutrient intake:</h4>
 <ul>
   <li>Gender: <%= @user.gender %></li>
-  <li>Date of birth: <%= @user.dob %></li>
+  <li>Date of birth: <%= @user.dob.strftime('%e %B, %Y') %></li>
   <li>Activity Level: <%= @user.activity_level %></li>
   <li>Height: <%= @user.height %></li>
   <li>Weight: <%= @user.weight %></li>
+  <li>Nutrition Plan: <%= @user.nutrition.name %></li>
+</ul>
+
+See something that's out of whack? <%= link_to('Update Profile', edit_user_path(@current_user.id)) %>
+
+<h4>We've crunched the numbers!! Here are your daily targets:</h4>
+
+<ul>
+  <li>Carbohydrates: <%= @rec_carb %></li>
+  <li>Protein: <%= @rec_protein %></li>
+  <li>Fat: <%= @rec_fat %></li>
 </ul>
 

@@ -1,21 +1,29 @@
 <%= form_for @user do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name, :autofocus => true %>
-
-  <%= f.label :dob, "Date of birth" %>
-  <%= f.text_field :dob %>
-
-  <%= f.label :gender %>
-  <%= f.text_field :gender %>
-
-  <%= f.label :activity_level %>
-  <%= f.text_field :activity_level %>
-
-  <%= f.label :weight %>
-  <%= f.text_field :weight %>
-
-  <%= f.label :height %>
-  <%= f.text_field :height %>
-
-  <%= f.submit  %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name, :autofocus => true %>
+  </p>
+  <p>
+    <%= f.label :dob, "Date of birth" %>
+    <%= f.date_field :dob %>
+  </p>
+  <p>
+    <%= f.label :gender %>
+    <%= f.select :gender, [['Male','Male'],['Female','Female']] %>
+  </p>
+  <p>
+    <%= f.label :activity_level, "Hours exercised per week" %>
+    <%= f.number_field :activity_level %>
+  </p>
+  <p>
+    <%= f.label :weight, "Weight (kg)" %>
+    <%= f.number_field :weight %>
+  </p>
+  <p>
+    <%= f.label :height, "Height (cm)" %>
+    <%= f.number_field :height %>
+  </p>
+  <p>
+    <%= f.submit  %>
+  </p>
 <% end %>
