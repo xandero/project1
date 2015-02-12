@@ -31,11 +31,16 @@ class FoodsController < ApplicationController
   def food_to_meal
     
     q = params[:quantity].to_f
+
+
     carb_amount = params[:carb_amount].to_f * q
     fat_amount = params[:fat_amount].to_f * q
     protein_amount = params[:protein_amount].to_f * q 
     @meal = params[:meal_id]
     @food = Food.new
+    @food.quantity = params[:serving_size_qty]
+    @food.serving_size = params[:serving_size_unit]
+    @food.quantity = q
     @food.meal_id = @meal
     @food.name = params[:item_name]
     @food.carb_amount = carb_amount

@@ -1,10 +1,23 @@
-<h3>Here's your guessed vs actual macro values</h3>
-
+<div class="col-md-4 col-md-offset-4">
+  <h3>The results are in!</h3>
+</div>
 <div class="row">
   <div class="col-md-10 main">
     <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-6">  
+      <div class="col-md-6">
+        <p>
+          <strong><%= @meal.meal_type %>, <%= @meal.meal_date.strftime('%e %B, %Y') %></strong>
+        </p>
+        <p>
+          <% @meal.foods.each do |food| %>
+            <p>
+              <%= food.quantity %> <%= (food.serving_size).pluralize %> of <%= food.name %>
+            </p>
+          <% end %> 
+        </p>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-2">  
         <tbody>
           <table class="table table-striped">
             <thead>
@@ -12,6 +25,7 @@
                 <th></th>
                 <th>Guess</th>
                 <th>Actual</th>
+                <th>Difference</th>
               </tr>
             </thead>
             <tbody>
@@ -19,22 +33,25 @@
                 <td>Carbohydrates</td>
                 <td><%= @meal.carb_guess %></td>
                 <td><%= @meal.foods.sum(:carb_amount).round(1) %></td>
+                <td><%= number_to_percentage((@meal.foods.sum(:carb_amount)-(@meal.carb_guess)).round(1)/@meal.carb_guess*100, precision: 1) %></td>
               </tr>
               <tr>
                 <td>Protein</td>
                 <td><%= @meal.protein_guess %></td>
                 <td><%= @meal.foods.sum(:protein_amount).round(1) %></td>
+                <td><%= number_to_percentage((@meal.foods.sum(:protein_amount)-(@meal.protein_guess)).round(1)/@meal.protein_guess*100, precision: 1) %></td>
               </tr>
               <tr>
                 <td>Fat</td>
                 <td><%= @meal.fat_guess %></td>
                 <td><%= @meal.foods.sum(:fat_amount).round(1) %></td>
+                <td><%= number_to_percentage((@meal.foods.sum(:fat_amount)-(@meal.fat_guess)).round(1)/@meal.fat_guess*100, precision: 1) %></td>
               </tr>
             </tbody>
           </table>
         </tbody>
       </div>
-      <div class="col-md-2"></div>
+      <div class="col-md-1"></div>
     </div>
   </div>
 </div>

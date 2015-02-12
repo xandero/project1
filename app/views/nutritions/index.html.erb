@@ -1,7 +1,9 @@
 <h1>Nutrition Plans</h1>
 
 <% @nutritions.each do |nutrition| %>
-  <h3><%= nutrition.name %></h3>
-  <p><%= nutrition.description %></p>
+  <p class="text-justify">
+    <h3><%= nutrition.name %></h3>
+    <p><%= nutrition.description %></p>
+  </p>
 <% end %>
 
