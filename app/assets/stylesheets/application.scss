@@ -19,6 +19,15 @@
  
 body {
   font-family: 'Source Sans Pro', sans-serif; 
+  height: 100%;
+  margin-top: 0px;
+}
+
+.logo {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  padding: 0.6em;
+  font-size: 30px;
+  letter-spacing: 0.2em;
 }
 
 .voffset  { margin-top: 2px; }
@@ -32,7 +41,7 @@ body {
 .voffset8 { margin-top: 120px; }
 .voffset9 { margin-top: 190px; }
 
-.col-md-10 #huge {
+.col-md-9 #huge {
   font-size: 65px;
   letter-spacing: 0.15em;
 }
@@ -46,44 +55,30 @@ h4 {
   padding-bottom: 0.5em;
 }
 
-.navbar-brand {
-  font-family: 'Source Sans Pro', sans-serif; 
-  letter-spacing: 9px;
-  font-size: 28px;
-}
-
-#navbar {
-  color: white;
-  padding-right: 2em;
-  font-size: 11px;
-  background: rgb(51,130,39); /* Old browsers */
-  background: -moz-linear-gradient(left,  rgba(51,130,39,1) 0%, rgba(137,206,136,1) 26%, rgba(82,177,82,1) 42%, rgba(0,138,0,1) 67%, rgba(0,87,0,1) 83%, rgba(0,81,2,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(51,130,39,1)), color-stop(26%,rgba(137,206,136,1)), color-stop(42%,rgba(82,177,82,1)), color-stop(67%,rgba(0,138,0,1)), color-stop(83%,rgba(0,87,0,1)), color-stop(100%,rgba(0,81,2,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left,  rgba(51,130,39,1) 0%,rgba(137,206,136,1) 26%,rgba(82,177,82,1) 42%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,81,2,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left,  rgba(51,130,39,1) 0%,rgba(137,206,136,1) 26%,rgba(82,177,82,1) 42%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,81,2,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(left,  rgba(51,130,39,1) 0%,rgba(137,206,136,1) 26%,rgba(82,177,82,1) 42%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,81,2,1) 100%); /* IE10+ */
-  background: linear-gradient(to right,  rgba(51,130,39,1) 0%,rgba(137,206,136,1) 26%,rgba(82,177,82,1) 42%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,81,2,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#338227', endColorstr='#005102',GradientType=1 ); /* IE6-9 */
+#my-logo {
+  background: transparent;
+  height: 0px;
 }
 
 .opaque {
-  width: 100wh;
-  height: 100vh;
   display: block;
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .opaque::after {
   content: "";
-  background: url('http://marinaaurora.businesscatalyst.com/C5.jpg');
-  opacity: 0.5;
+  background: url('http://michaelmichaels.com/wp-content/uploads/galleries/post-1221/full/14-food-photography-mushroom.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.6;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1; 
-  background-attachment: fixed;  
 }
 
 #right-nav ul {
@@ -95,12 +90,13 @@ h4 {
 }
 
 #right-nav ul a {
-  color: rgb( 5, 110, 0 )
+  color: rgb( 38, 38, 38 );
+  font-size: 12px;
 }
 
 html, body, .main-container { 
   height: 100%;
-  padding-top: 15px;  
+  padding-top: 0px;  
 }
 
 body > .main-container { 
@@ -114,12 +110,13 @@ body.btn btn-success {
 
 #footer {
   clear: both;
-  position: relative;
+  position: absolute;
   z-index: 10;
   height: 4em;
   margin-top: 0em;
   margin-left: 1em;
-
+  bottom: 0;
+  
 }
 
 #content { 

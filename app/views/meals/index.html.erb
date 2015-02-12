@@ -1,8 +1,17 @@
 <h3>Your Meals</h3>
 
-<% @meals.each do |meal| %>
+<%if @meals.empty? %>
+  Oops! It doesn't look like you've entered any meals.
+    <p>
+    Click below to add a meal.
+    </p>
+<% else %>
+  <% @meals.each do |meal| %>
   <p>
     <%= link_to("#{meal.meal_date.strftime('%e %B, %Y')} #{meal.meal_type}", meal_path(meal)) %>
-  </p>
+  </p> 
+  <% end %>
 <% end %>  
+
+<%= link_to("Add a Meal", new_meal_path(@current_user.id)) %>
 

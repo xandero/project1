@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-md-10 main">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-4">
+        <div class="voffset6"></div>
+        <div class="form-inline">
+          <div class="form-group">
+            <h2>
+              <%= flash[:error] if flash[:error].present? %>
+            </h2>
+            <h1>Log in</h1>
+            <div class="voffset4"></div>
+            <%= form_tag login_path do %>
+            <p>
+            <%= label_tag :username %>
+            <%= text_field_tag :username, nil, :autofocus => true, :class => "form-control" %>
+            </p>
+            <p>
+            <%= label_tag :password %>
+            <%= password_field_tag :password, :class => "form-control" %>
+            </p>
+            <p>
+            <%= submit_tag "Login", :class => "btn btn-success" %>
+            <% end %>
+            </p>
+          </div>
+        </div>  
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+

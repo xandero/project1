@@ -1,33 +1,35 @@
-<%= form_for @user do |f| %>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name, :autofocus => true %>
-  </p>
-  <p>
-    <%= f.label :dob, "Date of birth" %>
-    <%= f.date_field :dob %>
-  </p>
-  <p>
-    <%= f.label :gender %>
-    <%= f.select :gender, [['Male','Male'],['Female','Female']] %>
-  </p>
-  <p>
-    <%= f.label :activity_level, "Hours exercised per week" %>
-    <%= f.number_field :activity_level %>
-  </p>
-  <p>
-    <%= f.label :weight, "Weight (kg)" %>
-    <%= f.number_field :weight %>
-  </p>
-  <p>
-    <%= f.label :height, "Height (cm)" %>
-    <%= f.number_field :height %>
-  </p>
-  <p>
-    <%= f.label :nutrition_id, "Nutrition Plan" %>
-    <%= f.collection_select :nutrition_id, Nutrition.all, :id, :name %>
-  </p>
-  <p>
-    <%= f.submit  %>
-  </p>
-<% end %>
+<div class="col-md-6 col-md-offset-1">
+  <%= form_for @user do |f| %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name, :autofocus => true, :class => "form-control" %>
+    </p>
+    <p>
+      <%= f.label :dob, "Date of birth" %>
+      <%= f.date_field :dob, :class => "form-control" %>
+    </p>
+    <p>
+      <%= f.label :gender %>
+      <%= f.select :gender, [['Male','Male'],['Female','Female']], :class => "form-control" %>
+    </p>
+    <p>
+      <%= f.label :activity_level, "Hours exercised per week" %>
+      <%= f.number_field :activity_level, :class => "form-control" %>
+    </p>
+    <p>
+      <%= f.label :weight, "Weight (kg)" %>
+      <%= f.number_field :weight, :class => "form-control" %>
+    </p>
+    <p>
+      <%= f.label :height, "Height (cm)" %>
+      <%= f.number_field :height, :class => "form-control" %>
+    </p>
+    <p>
+      <%= f.label :nutrition_id, "Nutrition Plan" %>
+      <%= f.collection_select :nutrition_id, Nutrition.all, :id, :name, :class => "form-control"%>
+    </p>
+    <p>
+      <%= f.submit :class => "btn btn-success"  %>
+    </p>
+  <% end %>
+</div>
