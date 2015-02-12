@@ -23,11 +23,20 @@ body {
   margin-top: 0px;
 }
 
-.logo {
+.logo a {
   font-family: 'Alegreya Sans SC', sans-serif;
-  padding: 0.6em;
   font-size: 30px;
   letter-spacing: 0.2em;
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  margin-top: 1em; 
+}
+
+#huge {
+  padding-top: 50px;  
 }
 
 .voffset  { margin-top: 2px; }
@@ -81,6 +90,11 @@ h4 {
   z-index: -1; 
 }
 
+.side-menu {
+  position: fixed;
+  text-align: right;
+}
+
 #right-nav ul {
   padding-top: 4em;
   letter-spacing: 1px;
@@ -104,17 +118,25 @@ body > .main-container {
   min-height: 100%; 
 }
 
-body.btn btn-success {
+.btn-success a {
   color: white;
+}
+
+.btn-danger a {
+  color: white;
+}
+
+.btn {
+  margin-left: 15px;
 }
 
 #footer {
   clear: both;
-  position: absolute;
+  position: fixed;
   z-index: 10;
   height: 4em;
   margin-top: 0em;
-  margin-left: 1em;
+  margin-left: 1000px;
   bottom: 0;
   
 }

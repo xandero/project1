@@ -1,23 +1,25 @@
-<%= form_for @meal do |f| %>
-<p>  
-  <%= f.label :meal_type %>
-  <%= f.select :meal_type, [['Breakfast','Breakfast'],['Lunch','Lunch'],['Dinner','Dinner'],['Snack','Snack']] %>
-</p>
-<p>
-  <%= f.label :meal_date %>
-  <%= f.date_field :meal_date %>
-</p>
-<p>
-  <%= f.label :protein_guess, "Guess Protein Amount" %>
-  <%= f.number_field :protein_guess, :placeholder => 'grams', :step => 0.1 %>
-</p>
-<p>
-  <%= f.label :carb_guess, "Guess Carbohydrate Amount" %>
-  <%= f.number_field :carb_guess, :placeholder => 'grams', :step => 0.1 %>
-</p>
-<p>
-  <%= f.label :fat_guess, "Guess Fat Amount" %>
-  <%= f.number_field :fat_guess, :placeholder => 'grams', :step => 0.1 %>
-</p>
-  <%= f.submit  %>
-<% end %>
+<div class="col-md-6 col-md-offset-1">
+  <%= form_for @meal do |f| %>
+  <p>  
+    <%= f.label :meal_type %>
+    <%= f.select :meal_type, [['Breakfast','Breakfast'],['Lunch','Lunch'],['Dinner','Dinner'],['Snack','Snack']], :class => "form-control" %>
+  </p>
+  <p>
+    <%= f.label :meal_date %>
+    <%= f.date_field :meal_date, :class => "form-control" %>
+  </p>
+  <p>
+    <%= f.label :protein_guess, "Guess Protein Amount" %>
+    <%= f.number_field :protein_guess, :placeholder => 'grams', :step => 0.1, :class => "form-control" %>
+  </p>
+  <p>
+    <%= f.label :carb_guess, "Guess Carbohydrate Amount" %>
+    <%= f.number_field :carb_guess, :placeholder => 'grams', :step => 0.1, :class => "form-control" %>
+  </p>
+  <p>
+    <%= f.label :fat_guess, "Guess Fat Amount" %>
+    <%= f.number_field :fat_guess, :placeholder => 'grams', :step => 0.1, :class => "form-control" %>
+  </p>
+    <%= f.submit :class => "btn btn-success" %>
+  <% end %>
+</div>
