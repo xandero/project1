@@ -1,8 +1,8 @@
 <div class="row">
   <div class="row voffset8">
-    <div class="col-md-4"></div>
+    <div class="col-md-3 search"></div>
     <div class="col-md-6">
-      <h3>Search for a food to add:</h3>  
+      <h3 id="search">Search for a food to add:</h3>  
       <%= form_tag("/meals/#{ @meal }/foods", method: "post") do %>
       <%= label_tag(:name, "Search for:") %>
       <%= text_field_tag(:name) %>
@@ -12,6 +12,3 @@
     <div class="col-md-2"></div>
   </div>
 </div>
-
-      
-    

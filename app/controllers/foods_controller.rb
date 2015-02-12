@@ -10,7 +10,7 @@ class FoodsController < ApplicationController
 
   def create
 
-    url = "https://api.nutritionix.com/v1_1/search/#{ params[:name] }?results=0:3&fields=item_name,brand_name,item_id,brand_id,nf_serving_size_qty,nf_serving_size_unit&appId=92a57023&appKey=5a11032e7168104fdfa242bd3b62e636"
+    url = "https://api.nutritionix.com/v1_1/search/#{ params[:name] }?results=0:10&fields=item_name,brand_name,item_id,brand_id,nf_serving_size_qty,nf_serving_size_unit&appId=92a57023&appKey=5a11032e7168104fdfa242bd3b62e636"
     raw_data = HTTParty.get url
     parsed_data = JSON.parse(raw_data.body)
     @food_data = parsed_data['hits']

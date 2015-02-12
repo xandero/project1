@@ -1,22 +1,26 @@
-<h2>Add food to meal</h2>
+<div class="col-md-7 col-md-offset-2">
+  <div class="voffset5"></div> 
+  <h2>Add food to meal</h2>
+  <div class="voffset4"></div> 
+  You are adding <%= @food_data['brand_name'] %>, <%= @food_data['item_name'] %>, to your meal.<br>
+  Standard serving: <%= @food_data['nf_serving_size_qty'] %> <%= @food_data['nf_serving_size_unit'] %>
+  <p>  
+    <div class="voffset5"></div> 
+    <%= form_tag(meal_food_to_meal_path(@meal)) do %>
+    How many servings did you have? 
+    <%= number_field_tag :quantity, :post, :step => 0.1 %>
+    <%= hidden_field_tag :carb_amount, @food_data['nf_total_carbohydrate'].to_f %>
+    <%= hidden_field_tag :fat_amount, @food_data['nf_total_fat'].to_f %>
+    <%= hidden_field_tag :protein_amount, @food_data['nf_protein'].to_f %>
+    <%= hidden_field_tag :meal_id, @meal %>
+    <%= hidden_field_tag :brand_name, @food_data['brand_name'] %>
+    <%= hidden_field_tag :item_name, @food_data['item_name'] %>
+    <%= hidden_field_tag :serving_size_unit, @food_data['nf_serving_size_unit'] %>
+    <%= hidden_field_tag :serving_size_qty, @food_data['nf_serving_size_qty'] %>
+    
+    <button>Add to meal</button>
+    <% end %>
 
-You are adding <%= @food_data['brand_name'] %>, <%= @food_data['item_name'] %>, to your meal.<br>
-Standard serving: <%= @food_data['nf_serving_size_qty'] %> <%= @food_data['nf_serving_size_unit'] %>
-<p> 
-  <%= form_tag(meal_food_to_meal_path(@meal)) do %>
-  How many servings did you have? 
-  <%= number_field_tag :quantity, :post, :step => 0.1 %>
-  <%= hidden_field_tag :carb_amount, @food_data['nf_total_carbohydrate'].to_f %>
-  <%= hidden_field_tag :fat_amount, @food_data['nf_total_fat'].to_f %>
-  <%= hidden_field_tag :protein_amount, @food_data['nf_protein'].to_f %>
-  <%= hidden_field_tag :meal_id, @meal %>
-  <%= hidden_field_tag :brand_name, @food_data['brand_name'] %>
-  <%= hidden_field_tag :item_name, @food_data['item_name'] %>
-  <%= hidden_field_tag :serving_size_unit, @food_data['nf_serving_size_unit'] %>
-  <%= hidden_field_tag :serving_size_qty, @food_data['nf_serving_size_qty'] %>
-  
-  <button>Add to meal</button>
-  <% end %>
-
-</p>
+  </p>
+</div>
   

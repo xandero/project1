@@ -1,11 +1,14 @@
-<h3>Search results</h3>
+<div class="col-md-7 col-md-offset-2">
+  <h3>Search results</h3>
 
-<%= form_tag(meal_quantity_path(@meal)) do %> 
-  <% @food_data.each do |item| %>
-    <p>
-    <input type="radio" name="selected_food" value="<%= item['fields']['item_id'] %>"><%= item['fields']['brand_name'] %>,
-    <%= item['fields']['item_name'] %>
-    </p>
-  <% end %> 
-  <button>Add Quantity</button> 
-<% end %>
+  <%= form_tag(meal_quantity_path(@meal)) do %> 
+    <% @food_data.each do |item| %>
+      <p>
+      <input id="radio-button" type="radio" name="selected_food" value="<%= item['fields']['item_id'] %>"><%= item['fields']['brand_name'] %>,
+      <%= item['fields']['item_name'] %>
+      </p>
+    <% end %>
+    <div class="voffset3"></div> 
+      <button>Go to Add Quantity</button>   
+  <% end %>
+</div>

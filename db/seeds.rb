@@ -3,10 +3,10 @@ User.destroy_all
 Meal.destroy_all
 Nutrition.destroy_all
 
-u1 = User.create(:name => 'Luke', :dob => '1982/07/12', :gender => 'Male', :activity_level => '11', :weight => '74', :height => '173', :password => 'food', :password_confirmation => 'food')
-u2 = User.create(:name => 'Adam', :dob => '1985/01/03', :gender => 'Male', :activity_level => '7', :weight => '86', :height => '181', :password => 'food', :password_confirmation => 'food')
-u3 = User.create(:name => 'Chad', :dob => '1981/03/09', :gender => 'Male', :activity_level => '14', :weight => '99', :height => '184', :password => 'food', :password_confirmation => 'food')
-u4 = User.create(:name => 'Kate', :dob => '1987/10/02', :gender => 'Female', :activity_level => '5', :weight => '55', :height => '163', :password => 'food', :password_confirmation => 'food')
+# u1 = User.create(:name => 'Luke', :dob => '1982/07/12', :gender => 'Male', :activity_level => '11', :weight => '74', :height => '173', :password => 'food', :password_confirmation => 'food')
+# u2 = User.create(:name => 'Adam', :dob => '1985/01/03', :gender => 'Male', :activity_level => '7', :weight => '86', :height => '181', :password => 'food', :password_confirmation => 'food')
+# u3 = User.create(:name => 'Chad', :dob => '1981/03/09', :gender => 'Male', :activity_level => '14', :weight => '99', :height => '184', :password => 'food', :password_confirmation => 'food')
+# u4 = User.create(:name => 'Kate', :dob => '1987/10/02', :gender => 'Female', :activity_level => '5', :weight => '55', :height => '163', :password => 'food', :password_confirmation => 'food')
 
 # f1 = Food.create(:name => 'chicken', :serving_size => 'cup', :quantity => '1.5')
 # f2 = Food.create(:name => 'beef', :serving_size => 'cup', :quantity => '2')
