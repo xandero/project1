@@ -17,6 +17,7 @@
         </p>
         <div class="voffset6"></div> 
         <%= link_to("Add another meal", new_meal_path(@current_user.id), :class => "btn btn-success") %>
+        <%= link_to("View my meals", meal_path(@current_user.id), :class => "btn btn-success") %>
       </div>
       <div class="col-md-1"></div>
       <div class="col-md-2">  
@@ -25,9 +26,9 @@
             <thead>
               <tr>
                 <th></th>
-                <th>Guess</th>
-                <th>Actual</th>
-                <th>Difference</th>
+                <th><strong>Guess</strong></th>
+                <th><strong>Actual</strong></th>
+                <th><strong>Difference</strong></th>
               </tr>
             </thead>
             <tbody>

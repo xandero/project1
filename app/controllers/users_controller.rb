@@ -45,9 +45,9 @@ class UsersController < ApplicationController
     # Using 2000 calories as the average daily intake. 
     @multiplier = (@calories/2000).to_f
 
-    @rec_carb = (@user.nutrition.daily_carb.to_f * @multiplier).round(1)
-    @rec_fat = (@user.nutrition.daily_fat.to_f * @multiplier).round(1)
-    @rec_protein = (@user.nutrition.daily_protein.to_f * @multiplier).round(1)
+    @rec_carb = (@user.nutrition.daily_carb.to_f * @multiplier).round(0)
+    @rec_fat = (@user.nutrition.daily_fat.to_f * @multiplier).round(0)
+    @rec_protein = (@user.nutrition.daily_protein.to_f * @multiplier).round(0)
   end
 
     private
