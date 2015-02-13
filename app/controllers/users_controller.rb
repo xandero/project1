@@ -38,9 +38,9 @@ class UsersController < ApplicationController
 
     # This following formula is based on the Mifflin - St Jeor equation to determine daily calorie intake.
     if @user.gender == 'Male'
-      @calories = ((30 + @user.activity_level.to_f)/30 * (@user.weight * 10) + (6.25 * @user.height) - (5 * @user.age) + 5.0)
+      @calories = ((20 + @user.activity_level.to_f)/20 * (@user.weight * 10) + (6.25 * @user.height) - (5 * @user.age) + 5.0)
     else
-      @calories = ((30 + @user.activity_level.to_f)/30 * (@user.weight * 10) + (6.25 * @user.height) - (5 * @user.age) - 161.0)
+      @calories = ((20 + @user.activity_level.to_f)/20 * (@user.weight * 10) + (6.25 * @user.height) - (5 * @user.age) - 161.0)
     end
     # Using 2000 calories as the average daily intake. 
     @multiplier = (@calories/2000).to_f
