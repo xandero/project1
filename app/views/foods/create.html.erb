@@ -4,7 +4,7 @@
   <%= form_tag(meal_quantity_path(@meal)) do %> 
     <% @food_data.each do |item| %>
       <p>
-      <input id="radio-button" type="radio" name="selected_food" value="<%= item['fields']['item_id'] %>"><%= item['fields']['brand_name'] %>,
+      <input id="radio-button" type="radio" name="selected_food" value="<%= item['fields']['item_id'] %>" required><%= item['fields']['brand_name'] %>,
       <%= item['fields']['item_name'] %>
       </p>
     <% end %>

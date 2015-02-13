@@ -1,34 +1,34 @@
 <%= form_for @user do |f| %>
   <p>
     <%= f.label :name %>
-    <%= f.text_field :name, :autofocus => true, :class => "form-control" %>
+    <%= f.text_field :name,  :class => "form-control", :disabled => "true" %>
   </p>
   <p>
     <%= f.label :dob, "Date of birth" %>
-    <%= f.date_field :dob, :class => "form-control" %>
+    <%= f.date_field :dob, :class => "form-control", :required => true, :autofocus => true %>
   </p>
   <p>
     <%= f.label :gender %>
-    <%= f.select :gender, [['Male','Male'],['Female','Female']], :class => "form-control" %>
+    <%= f.select :gender, [['Male','Male'],['Female','Female']], :class => "form-control", :required => true, :include_blank => true %>
   </p>
   <p>
     <%= f.label :activity_level, "Hours exercised per week" %>
-    <%= f.number_field :activity_level, :class => "form-control" %>
+    <%= f.number_field :activity_level, :class => "form-control", :required => true %>
   </p>
   <p>
     <%= f.label :weight, "Weight (kg)" %>
-    <%= f.number_field :weight, :class => "form-control" %>
+    <%= f.number_field :weight, :class => "form-control", :required => true %>
   </p>
   <p>
     <%= f.label :height, "Height (cm)" %>
-    <%= f.number_field :height, :class => "form-control" %>
+    <%= f.number_field :height, :class => "form-control", :required => true %>
   </p>
   <p>
     <%= f.label :nutrition_id, "Nutrition Plan" %>
-    <%= f.collection_select :nutrition_id, Nutrition.all, :id, :name, :class => "form-control"%>
+    <%= f.collection_select :nutrition_id, Nutrition.all, :id, :name, :class => "form-control", :required => true, :include_blank => true %>
   </p>
   <p>
-    <%= f.submit :class => "btn btn-success"  %>
+    <%= f.submit :class => "btn btn-success" %>
   </p>
 <% end %>
 
