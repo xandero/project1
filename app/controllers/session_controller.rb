@@ -11,7 +11,6 @@ class SessionController < ApplicationController
         else 
           redirect_to edit_user_path(user)
       end
-      
     else
       flash[:error] = "Invalid login or password"
       redirect_to(login_path)
